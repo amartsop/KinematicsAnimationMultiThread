@@ -1,0 +1,9 @@
+<map id="KinematicAnimation::setup_exoskeletons" name="KinematicAnimation::setup_exoskeletons">
+<area shape="rect" id="node1" title=" " alt="" coords="5,100,164,141"/>
+<area shape="rect" id="node2" href="$classMenuHandler.html#a99ef8b4eed51bb9d82fec9f8243f9674" title=" " alt="" coords="216,5,383,47"/>
+<area shape="rect" id="node3" href="$classMenuHandler.html#a48e6fb0053eab65d523920d1c1b2bc6b" title=" " alt="" coords="212,71,387,112"/>
+<area shape="rect" id="node4" href="$classExoskeleton.html#a16bc036a0caad1882dd602d047b1d843" title=" " alt="" coords="217,137,382,163"/>
+<area shape="rect" id="node7" href="$classHand.html#a913d356ed0d9a5881aeed9f66ccb88b5" title=" " alt="" coords="239,187,359,214"/>
+<area shape="rect" id="node5" href="$classExoskeleton.html#ae3bd5db26fae85588e9a7efd202ced50" title=" " alt="" coords="435,129,604,171"/>
+<area shape="rect" id="node6" href="$classUtils.html#a6e7193f2c602f2f8e1553c2cfefe9979" title=" " alt="" coords="652,129,808,171"/>
+</map>

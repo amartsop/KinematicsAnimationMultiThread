@@ -1,0 +1,32 @@
+digraph "nlohmann::basic_json::diff"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="nlohmann::basic_json\l::diff",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="creates a diff as a JSON patch"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nlohmann::basic_json\l::cbegin",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#ae508c13e3ad6ce445bcaf24a2bc7d039",tooltip="returns a const iterator to the first element"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nlohmann::basic_json\l::cend",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a3017cf0f1a4673e904e34cfef62e7758",tooltip="returns a const iterator to one past the last element"];
+  Node1 -> Node1 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="nlohmann::basic_json::end",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a931267ec3f09eb67e4382f321b2c52bc",tooltip="returns an iterator to one past the last element"];
+  Node1 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="nlohmann::json_pointer\l::escape",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1json__pointer.html#a8abf3577f9a0087f29a233893cdc73ad",tooltip="escape \"~\" to \"~0\" and \"/\" to \"~1\""];
+  Node5 -> Node6 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="nlohmann::json_pointer\l::replace_substring",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1json__pointer.html#aa7649d30da9fc10b0e20704a27aea2a9",tooltip="replace all occurrences of a substring by another string"];
+  Node1 -> Node7 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="nlohmann::basic_json\l::find",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#acdf9b3aab82dcf443dd91ca5ec06b80c",tooltip="find an element in a JSON object"];
+  Node7 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 -> Node8 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="nlohmann::basic_json\l::is_object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a57e8411a770a6263d6d8f2116c37f3aa",tooltip="return whether value is an object"];
+  Node1 -> Node9 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="nlohmann::basic_json\l::object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a9a4df356e05415438fadf8a15e583903",tooltip="explicitly create an object from an initializer list"];
+  Node1 -> Node10 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="nlohmann::basic_json\l::size",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a33c7c8638bb0b12e6d1b69d8106dd2e0",tooltip="returns the number of elements"];
+  Node1 -> Node11 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="nlohmann::to_string",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$namespacenlohmann.html#a6ce645a0b8717757e096a5b5773b7a16",tooltip="user-defined to_string function for JSON values"];
+  Node1 -> Node12 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="nlohmann::basic_json\l::type",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a5b7c4b35a0ad9f97474912a08965d7ad",tooltip="return the type of the JSON value (explicit)"];
+}

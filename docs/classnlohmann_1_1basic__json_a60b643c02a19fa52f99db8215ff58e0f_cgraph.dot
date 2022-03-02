@@ -1,0 +1,17 @@
+digraph "nlohmann::basic_json::~basic_json"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="nlohmann::basic_json\l::~basic_json",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="destructor"];
+  Node1 -> Node2 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="nlohmann::basic_json\l::assert_invariant",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#aa7e7b1bdb6e9dbcfa5e284e8a2fb6464",tooltip="checks the class invariants"];
+  Node1 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="nlohmann::basic_json\l::json_value::destroy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$unionnlohmann_1_1basic__json_1_1json__value.html#a34d4ecf420c2752268b9b24829cdd393",tooltip=" "];
+  Node3 -> Node3 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 -> Node4 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="nlohmann::basic_json\l::is_array",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#ab5b70d60a636b9c5e10f6c8caac60b9e",tooltip="return whether value is an array"];
+  Node3 -> Node5 [color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="nlohmann::basic_json\l::is_object",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classnlohmann_1_1basic__json.html#a57e8411a770a6263d6d8f2116c37f3aa",tooltip="return whether value is an object"];
+}

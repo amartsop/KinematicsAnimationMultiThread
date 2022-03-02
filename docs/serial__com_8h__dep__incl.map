@@ -1,0 +1,11 @@
+<map id="include/serial_com.h" name="include/serial_com.h">
+<area shape="rect" id="node1" title=" " alt="" coords="356,5,512,32"/>
+<area shape="rect" id="node2" href="$exoskeleton_8h.html" title=" " alt="" coords="264,80,428,107"/>
+<area shape="rect" id="node9" href="$serial__com_8cpp.html" title=" " alt="" coords="452,80,595,107"/>
+<area shape="rect" id="node3" href="$hand_8h.html" title=" " alt="" coords="239,155,357,181"/>
+<area shape="rect" id="node4" href="$kinematic__animation_8h.html" title=" " alt="" coords="5,229,228,256"/>
+<area shape="rect" id="node5" href="$main_8cpp.html" title=" " alt="" coords="299,304,382,331"/>
+<area shape="rect" id="node8" href="$exoskeleton_8cpp.html" title=" " alt="" coords="432,155,583,181"/>
+<area shape="rect" id="node7" href="$hand_8cpp.html" title=" " alt="" coords="253,229,357,256"/>
+<area shape="rect" id="node6" href="$kinematic__animation_8cpp.html" title=" " alt="" coords="11,304,222,331"/>
+</map>
