@@ -13,6 +13,12 @@
 #include "./include/animated_hand.h"
 #include "./include/kinematic_animation.h"
 
+/**
+ * @brief This is the main execution function. It first initiates the libigl 
+ * viewer and then calls the menu handler from ImGui. It then defines the 
+ * exoskeleton handlers and defines the callback function for the rendering loop.
+ * For a better understanding of the dependencies see the provided call graph.
+ */
 int main(void)
 {
   // Initialize viewer
@@ -54,4 +60,3 @@ int main(void)
   viewer.core().animation_max_fps = 30;
   viewer.launch();
 }
-

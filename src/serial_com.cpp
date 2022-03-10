@@ -2,8 +2,8 @@
 
 /**
  * Write a string to the serial device.
-    * \param s string to write
-    * \throws boost::system::system_error on failure
+    * \param s string to write.
+    * \throws boost::system::system_error on failure.
     */
 void SerialCOM::writeString(std::string s)
 {
@@ -13,8 +13,8 @@ void SerialCOM::writeString(std::string s)
 /**
  * Blocks until a line is received from the serial device.
     * Eventual '\n' or '\r\n' characters at the end of the string are removed.
-    * \return a string containing the received line
-    * \throws boost::system::system_error on failure
+    * \return a string containing the received line.
+    * \throws boost::system::system_error on failure.
     */
 std::string SerialCOM::readLine()
 {
@@ -37,9 +37,14 @@ std::string SerialCOM::readLine()
     }
 }
 
+/**
+ * @brief Setup up stream by reading the values a couple times first.
+ * 
+ * @param iter Number of times to read for warming up.
+ */
 void SerialCOM::initialize_stream(int iter)
 {
-    // Read first 100 lines to start
+    // Read first (iter) lines to start
     for (size_t i = 0; i < iter; i++)
     {
       std::string incoming_str = this->readLine();

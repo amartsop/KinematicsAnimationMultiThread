@@ -1,7 +1,11 @@
 #include "../include/euler_rotations.h"
 
-
-// Basic rotation matrix wrt x axis
+/**
+ * @brief 
+ * Return the basic rotation matrix around x axis by a given angle x.
+ * @param x The rotation angle.
+ * @return Eigen::Matrix3d The basic rotation matrix around x axis.
+ */
 Eigen::Matrix3d EulerRotations::basic_rotation_x(double x)
 {
     // Matrix initialization
@@ -13,8 +17,12 @@ Eigen::Matrix3d EulerRotations::basic_rotation_x(double x)
     return m;
 }
 
-
-// Basic rotation matrix wrt y axis
+/**
+ * @brief 
+ * Return the basic rotation matrix around y axis by a given angle x.
+ * @param x The rotation angle.
+ * @return Eigen::Matrix3d The basic rotation matrix around y axis.
+ */
 Eigen::Matrix3d EulerRotations::basic_rotation_y(double x)
 {
     // Matrix initialization
@@ -26,8 +34,12 @@ Eigen::Matrix3d EulerRotations::basic_rotation_y(double x)
     return m;
 }
 
-
-// Basic rotation matrix wrt z axis
+/**
+ * @brief 
+ * Return the basic rotation matrix around z axis by a given angle x.
+ * @param x The rotation angle.
+ * @return Eigen::Matrix3d The basic rotation matrix around z axis.
+ */
 Eigen::Matrix3d EulerRotations::basic_rotation_z(double x)
 {
     // Matrix initialization
@@ -40,14 +52,24 @@ Eigen::Matrix3d EulerRotations::basic_rotation_z(double x)
 }
 
 
-// Euler rotation matrix z-y'-x''
+/**
+ * @brief Compound rotation matrix given three Euler angles
+ * The Euler angles follow the post multiply * sequence zyx. Rotate
+ * "psi" around Z (yaw), "theta" around y (pitch)
+ * and "phi" around x (roll).
+ * Return the basic rotation matrix around z axis by a given angle x.
+ * @param phi Roll angle around x axis. (rad)
+ * @param theta Pitch angle around y axis. (rad)
+ * @param psi  Yaw angle around z axis. (rad)
+ * @return Eigen::Matrix3d The compound rotation matrix.
+ */
 Eigen::Matrix3d EulerRotations::rotation(double phi, double theta, double psi)
 {
     // Matrix initialization
     Eigen::Matrix3d m;
 
     // Basic rotations
-    Eigen::Matrix3d rotx =  basic_rotation_x(phi);
+    Eigen::Matrix3d rotx = basic_rotation_x(phi);
     Eigen::Matrix3d roty = basic_rotation_y(theta);
     Eigen::Matrix3d rotz = basic_rotation_z(psi);
 
@@ -57,110 +79,41 @@ Eigen::Matrix3d EulerRotations::rotation(double phi, double theta, double psi)
     return m;
 }
 
-
-// Euler rotation matrix z-y'-x''
+/**
+ * \overload Eigen::Matrix3d EulerRotations::rotation(Eigen::Vector3d euler_angles)
+ */
 Eigen::Matrix3d EulerRotations::rotation(Eigen::Vector3d euler_angles)
 {
     return rotation(euler_angles(0), euler_angles(1), euler_angles(2));
 }
 
-
-// Euler rotation matrix z-y'-x''
+/**
+ * \overload Eigen::Matrix3d EulerRotations::rotation(std::vector<double> euler_angles)
+ */
 Eigen::Matrix3d EulerRotations::rotation(std::vector<double> euler_angles)
 {
     return rotation(euler_angles[0], euler_angles[1], euler_angles[2]);
 }
 
-// Euler rotation matrix z-y'-x''
+/**
+ * \overload Eigen::Matrix3d EulerRotations::rotation(Euler euler_angles)
+ */
 Eigen::Matrix3d EulerRotations::rotation(Euler euler_angles)
 {
     return rotation(euler_angles.phi, euler_angles.theta, euler_angles.psi);
 }
 
-
-// Body anglular velocity to euler angles derivative mapping (w = G * theta_dot)
-Eigen::Matrix3d EulerRotations::G(double phi, double theta, double psi)
-{
-    // Matrix initialization
-    Eigen::Matrix3d m;
-
-    m << 1.0, 0.0, -sin(theta), 
-        0.0, cos(phi), cos(theta) * sin(phi), 
-        0.0, -sin(phi), cos(phi) * cos(theta);
-
-    return m;
-}
-
-
-// Body anglular velocity to euler angles derivative mapping (w = G * theta_dot)
-Eigen::Matrix3d EulerRotations::G(Eigen::Vector3d euler_angles)
-{
-    return G(euler_angles(0), euler_angles(1), euler_angles(2));
-}
-
-
-// Body anglular velocity to euler angles derivative mapping (w = G * theta_dot)
-Eigen::Matrix3d EulerRotations::G(std::vector<double> euler_angles)
-{
-    return G(euler_angles[0], euler_angles[1], euler_angles[2]);
-}
-
-
-// Body anglular velocity to euler angles derivative mapping (w = G * theta_dot)
-Eigen::Matrix3d EulerRotations::G(Euler euler_angles)
-{
-    return G(euler_angles.phi, euler_angles.theta, euler_angles.psi);
-}
-
-
-// Euler angles second derivative to body anglular acceleration mapping
-Eigen::Matrix3d EulerRotations::G_dot(Eigen::Vector3d euler_angles,
-    Eigen::Vector3d euler_angles_dot)
-{
-    double phi = euler_angles(0);
-    double theta = euler_angles(1);
-
-    double phi_dot = euler_angles_dot(0);
-    double theta_dot = euler_angles_dot(1);
-
-    // Matrix initialization
-    Eigen::Matrix3d m;
-
-    m << 0.0, 0.0, - cos(theta) * theta_dot,
-        0.0, - sin(phi) * phi_dot, cos(theta) * cos(phi) * phi_dot - 
-        sin(theta) * sin(phi) * theta_dot,
-        0.0, - cos(phi) * phi_dot, -sin(phi) * cos(theta) * phi_dot - 
-        cos(phi) * sin(theta) * theta_dot;
-
-    return m;
-}
-
-
-// Euler angles second derivative to body anglular acceleration mapping
-Eigen::Matrix3d EulerRotations::G_dot(std::vector<double> euler_angles,
-        std::vector<double> euler_angles_dot)
-{
-    double phi = euler_angles[0];
-    double theta = euler_angles[1];
-
-    double phi_dot = euler_angles_dot[0];
-    double theta_dot = euler_angles_dot[1];
-
-    // Matrix initialization
-    Eigen::Matrix3d m;
-
-    m << 0.0, 0.0, - cos(theta) * theta_dot,
-        0.0, - sin(phi) * phi_dot, cos(theta) * cos(phi) * phi_dot - 
-        sin(theta) * sin(phi) * theta_dot,
-        0.0, - cos(phi) * phi_dot, -sin(phi) * cos(theta) * phi_dot - 
-        cos(phi) * sin(theta) * theta_dot;
-
-    return m;
-}
-
-/** Euler angles to quaternions. Euler angles follow the post multiply
-    sequence zyx. Rotate "psi" around Z (yaw), "theta" around y (roll)
-    and "phi" around x (roll) **/
+/**
+ * @brief 
+ * This method will return a custom Quaternions struct from a
+ * set of Euler angles. Euler angles follow the post multiply 
+ * sequence zyx. Rotate "psi" around Z (yaw), "theta" around y (pitch)
+ * and "phi" around x (roll).
+ * @param phi Roll angle around x axis. (rad)
+ * @param theta Pitch angle around y axis. (rad)
+ * @param psi  Yaw angle around z axis. (rad)
+ * @return EulerRotations::Quaternions Quaterinos struct.
+ */
 EulerRotations::Quaternions EulerRotations::euler_to_quaternions(double phi,
     double theta, double psi)
 {
@@ -180,9 +133,18 @@ EulerRotations::Quaternions EulerRotations::euler_to_quaternions(double phi,
 }
 
 
-/** Quaternions to Euler Angles. Euler angles follow the post multiply
-    sequence zyx. Rotate "psi" around Z (yaw), "theta" around y (roll)
-    and "phi" around x (roll) **/
+/**
+ * @brief 
+ * This method will return a custom Euler struct from a
+ * set of Quaternions. Euler angles follow the post multiply
+ * sequence zyx. Rotate "psi" around Z (yaw), "theta" around y (pitch)
+ * and "phi" around x (roll).
+ * @param w Quaternion parameter w.
+ * @param x Quaternion parameter x.
+ * @param y Quaternion parameter y.
+ * @param z Quaternion parameter z.
+ * @return EulerRotations::Euler Euler angles given in radians.
+ */
 EulerRotations::Euler EulerRotations::quaternions_to_euler(double w, double x,
     double y, double z)
 {

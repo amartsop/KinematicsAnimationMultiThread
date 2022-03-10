@@ -1,6 +1,11 @@
 #include "../include/utils.h"
 
-// Convert comma-delimited string to vector of integers
+/**
+ * @brief Return a vector of integers from a comma-delimited string.
+ *  (could have been templated if you can template stoi and stod).
+ * @param str The comma-delimited string.
+ * @return std::vector<int> The output vector of integers.
+ */
 std::vector<int> Utils::analog_str_buf_to_int_vec(const std::string& str)
 {
     // Initialize data vector
@@ -20,7 +25,12 @@ std::vector<int> Utils::analog_str_buf_to_int_vec(const std::string& str)
     return data_vec;
 }
 
-// Convert comma-delimited string to vector of floats
+/**
+ * @brief Return a vector of doubles from a comma-delimited string.
+ * 
+ * @param str The comma-delimited string.
+ * @return std::vector<int> The output vector of doubles.
+ */
 std::vector<double> Utils::analog_str_buf_to_double_vec(const std::string& str)
 {
     // Initialize data vector

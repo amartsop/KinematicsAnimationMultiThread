@@ -1,6 +1,12 @@
 #include "../include/exoskeleton.h"
 
-// Initialize 
+/**
+ * @brief It initialiazes the serial communication and sets the asychronous 
+ * callback function. See https://en.cppreference.com/w/cpp/thread/async.
+ * 
+ * @param serial_com The serial communication port.
+ * @param serial_baudrate The serial communication baudrate.
+ */
 void Exoskeleton::initialize(const std::string& serial_com,
     unsigned int serial_baudrate)
 {
@@ -14,7 +20,20 @@ void Exoskeleton::initialize(const std::string& serial_com,
     m_future_fun = std::async(&Exoskeleton::incoming_data_callback, this);
 }
 
-// Read incoming data asychronously
+/**
+ * @brief This is the callback function for reading asynchronously the incoming 
+ * data from the serial port. The data come in the format:
+ *\f[
+ *    data =\left[{\theta}_{i_1}, {\theta}_{i_2}, {\theta}_{i_3}, {\theta}_{i_4},
+ *    {\theta}_{m_1}, {\theta}_{m_2}, {\theta}_{m_3}, {\theta}_{m_4},
+ *    {\theta}_{t_1}, {\theta}_{t_2}, {\theta}_{t_3}, {\theta}_{t_4},
+ *    {\theta}_{t_5}
+ *          \right]^{T}
+ * \f]
+ *   \image html hand_kinematics.png width=600px
+ * @return std::vector<double> The raw angle data coming from the exoskeleton board.
+ * 
+ */
 std::vector<double> Exoskeleton::incoming_data_callback(void)
 {
     while(!m_return_value)
@@ -22,11 +41,16 @@ std::vector<double> Exoskeleton::incoming_data_callback(void)
         m_raw_sensor_data =
             Utils::analog_str_buf_to_double_vec(m_serial->readLine());
     }
-
     return m_raw_sensor_data;
 }
 
-// Get sensor data
+/**
+ * @brief It is the point of entry that feeds the animation
+ * loop with the exoskeleton data. It returns a vector
+ * of the raw jont angle data converted to radians. It also manages the 
+ * asynchronous threading.
+ * @return std::vector<double>  The joint angles.
+ */
 std::vector<double> Exoskeleton::get_joint_angles(void)
 {
     // Set termination flag for asychronous function

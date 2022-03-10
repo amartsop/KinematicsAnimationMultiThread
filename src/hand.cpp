@@ -1,5 +1,17 @@
 #include "../include/hand.h"
 
+/**
+ * @brief The function first reads the hand configuration 
+ * file (#m_config_rel_path) and sets up all the its fingers.
+ * 
+ * @param viewer Pointer to the viewer object.
+ * @param exo_handler Point to the exoskeleton object.
+ * @param anim_hand Pointer to the hand animation object.
+ * @param type Defines whether the hand is the left one (0) or the right one (1).
+ * @param origin Defines the origin of the hand \f$ f_{{W}_{0}} \f$ with respct 
+ * to the inertial frame \f$ F \f$.
+ */
+
 void Hand::initialize(igl::opengl::glfw::Viewer* viewer,
     Exoskeleton* exo_handler, AnimatedHand* anim_hand,
     bool type, const Eigen::Vector3d& origin)
@@ -49,8 +61,14 @@ void Hand::initialize(igl::opengl::glfw::Viewer* viewer,
     m_data_list_size = m_viewer_data_upper_idx - m_viewer_data_lower_idx;
 }
 
-
-// Update hand
+/**
+ * @brief It updates the hand vertices based on the euler angles for its 
+ * skeleton joints. These are fed throught the AnimatedHand::EulerID 
+ * struct. Based on the defined mapping it performs the forward kinematics 
+ * for each finger and calcualtes all the hand vertices.
+ * @param euler_id The custom EulerID structure as described in AnimatedHand::EulerID.
+ * @param viewer Pointer to the viewer object.
+ */
 void Hand::update(const std::vector<Eigen::Vector3d>& euler_id, 
     igl::opengl::glfw::Viewer& viewer)
 {
@@ -106,7 +124,14 @@ void Hand::update(const std::vector<Eigen::Vector3d>& euler_id,
     }
 }
 
-// Translation matrix
+/**
+ * @brief This is not a homogenous transformation matrix. Instead it is 
+ * used for shifting a matrix of vertices (as defined by libigl) by a given 
+ * offset. 
+ * @param offset The offset to shift the matrix of vertices.
+ * @param vert_num The number of matrices.
+ * @return Eigen::MatrixXd The output translation matrix.
+ */
 Eigen::MatrixXd Hand::translation_matrix(const Eigen::Vector3d& offset,
     size_t vert_num)
 {

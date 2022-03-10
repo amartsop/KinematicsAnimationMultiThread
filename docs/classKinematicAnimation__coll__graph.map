@@ -1,7 +1,7 @@
 <map id="KinematicAnimation" name="KinematicAnimation">
-<area shape="rect" id="node1" title=" " alt="" coords="180,109,335,136"/>
-<area shape="rect" id="node2" href="$classExoskeleton.html" title=" " alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node1" title="Class KinematicAnimation." alt="" coords="180,109,335,136"/>
+<area shape="rect" id="node2" href="$classExoskeleton.html" title="Class Exoskeleton." alt="" coords="5,5,107,32"/>
 <area shape="rect" id="node3" href="$classAnimatedHand.html" title=" " alt="" coords="131,5,250,32"/>
-<area shape="rect" id="node4" href="$classMenuHandler.html" title=" " alt="" coords="275,5,384,32"/>
-<area shape="rect" id="node5" href="$classHand.html" title=" " alt="" coords="444,5,500,32"/>
+<area shape="rect" id="node4" href="$classMenuHandler.html" title="Class MenuHandler." alt="" coords="275,5,384,32"/>
+<area shape="rect" id="node5" href="$classHand.html" title="Class Hand." alt="" coords="444,5,500,32"/>
 </map>

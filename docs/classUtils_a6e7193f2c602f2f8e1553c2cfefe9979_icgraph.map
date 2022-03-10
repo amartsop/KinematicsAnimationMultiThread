@@ -1,9 +1,9 @@
 <map id="Utils::analog_str_buf_to_double_vec" name="Utils::analog_str_buf_to_double_vec">
-<area shape="rect" id="node1" title=" " alt="" coords="956,39,1112,80"/>
-<area shape="rect" id="node2" href="$classExoskeleton.html#ae3bd5db26fae85588e9a7efd202ced50" title=" " alt="" coords="739,39,908,80"/>
-<area shape="rect" id="node3" href="$classExoskeleton.html#a28cfac80989e1548d0fcec09e2c5b1d6" title=" " alt="" coords="311,5,477,47"/>
-<area shape="rect" id="node6" href="$classExoskeleton.html#a16bc036a0caad1882dd602d047b1d843" title=" " alt="" coords="525,71,691,98"/>
-<area shape="rect" id="node4" href="$classKinematicAnimation.html#aeecbf92a1bb99909d8c262274cc5f123" title=" " alt="" coords="108,39,263,80"/>
-<area shape="rect" id="node5" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,46,60,73"/>
-<area shape="rect" id="node7" href="$classKinematicAnimation.html#ab2c55c0784b15b88a01d853851afaf7a" title=" " alt="" coords="315,71,473,112"/>
+<area shape="rect" id="node1" title="Convert comma&#45;delimited string to double vector of analog values." alt="" coords="956,39,1112,80"/>
+<area shape="rect" id="node2" href="$classExoskeleton.html#ae3bd5db26fae85588e9a7efd202ced50" title="Read incoming data." alt="" coords="739,39,908,80"/>
+<area shape="rect" id="node3" href="$classExoskeleton.html#a28cfac80989e1548d0fcec09e2c5b1d6" title="Get joint angles." alt="" coords="311,5,477,47"/>
+<area shape="rect" id="node6" href="$classExoskeleton.html#a16bc036a0caad1882dd602d047b1d843" title="Initialize." alt="" coords="525,71,691,98"/>
+<area shape="rect" id="node4" href="$classKinematicAnimation.html#aeecbf92a1bb99909d8c262274cc5f123" title="Animation loop callback." alt="" coords="108,39,263,80"/>
+<area shape="rect" id="node5" href="$main_8cpp.html#a840291bc02cba5474a4cb46a9b9566fe" title="This is the main execution function. It first initiates the libigl viewer and then calls the menu han..." alt="" coords="5,46,60,73"/>
+<area shape="rect" id="node7" href="$classKinematicAnimation.html#ab2c55c0784b15b88a01d853851afaf7a" title="Setup exoskeletons." alt="" coords="315,71,473,112"/>
 </map>

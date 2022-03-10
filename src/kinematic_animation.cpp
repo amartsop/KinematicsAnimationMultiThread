@@ -1,7 +1,13 @@
 #include "../include/kinematic_animation.h"
 
-
-// Initialize animation
+/**
+ * @brief Initializes kinematics animation by copying the input arguments
+ * to the member variables.
+ * @param viewer Pointer to the igl Viewer object.
+ * @param left_exo Pointer to the left exoskeleton object.
+ * @param anim_hand Pointer to the animated hand object.
+ * @param menu_handler Pointer to menu handler object.
+ */
 void KinematicAnimation::initialize(igl::opengl::glfw::Viewer* viewer, 
     Exoskeleton* left_exo, AnimatedHand* anim_hand, MenuHandler* menu_handler)
 {
@@ -18,7 +24,15 @@ void KinematicAnimation::initialize(igl::opengl::glfw::Viewer* viewer,
     m_camera_center << -0.1, -0.1, 0.0, 0.1, -0.1, 0.0, 0.0, 0.1, 0.0;
 }
 
-// Main animation loop
+/**
+ * @brief 
+ *  This is the main animation callback function. This is where the rendering is 
+ * happening. The function is passed as a lambda function to
+ * the Viewer handler (see main.cpp).
+ * @param viewer Reference to the viewer handle.
+ * @return true Animation should stop.
+ * @return false Animations keeps playing.
+ */
 bool KinematicAnimation::animation_loop(igl::opengl::glfw::Viewer& viewer)
 {
     if (viewer.core().is_animating)
@@ -46,15 +60,16 @@ bool KinematicAnimation::animation_loop(igl::opengl::glfw::Viewer& viewer)
             
             // Update right hand
             m_right_hand.update(euler_id, viewer);
-
         }
-        
     } 
-    
     return false;
 }
 
-
+/**
+ * @brief This function setups the exoskeletons. It initializes the 
+ * serial communications, the exoskeleton and the hand objects.
+ * @param viewer A reference to the viewer handle.
+ */
 void KinematicAnimation::setup_exoskeletons(igl::opengl::glfw::Viewer& viewer)
 {
    // Define serial COM for left exoskeleton

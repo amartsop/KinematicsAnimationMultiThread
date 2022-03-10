@@ -1,1 +1,11 @@
 \_form#0=98x15:$[-2^{53}+1, 2^{53}-1]$
+\_form#1=94x15:$w + x \vec{i} + y \vec{j} + z \vec{k}$
+\_form#2=336x18:\[ data =\left[{\theta}_{i_1}, {\theta}_{i_2}, {\theta}_{i_3}, {\theta}_{i_4}, {\theta}_{m_1}, {\theta}_{m_2}, {\theta}_{m_3}, {\theta}_{m_4}, {\theta}_{t_1}, {\theta}_{t_2}, {\theta}_{t_3}, {\theta}_{t_4}, {\theta}_{t_5} \right]^{T} \]
+\_form#3=24x14:$ T_{f_{w_{0}}} $
+\_form#4=25x21:$ T_{f_{i}}^{f_{w_{0}}} $
+\_form#5=51x11:$ i = 0, 3, 6 $
+\_form#6=28x23:$ T_{f_{O_{i}}}^{f_{W_{0}}} $
+\_form#7=10x9:$ F $
+\_form#8=25x19:$ T_{f_{W_{0}}}^{F} $
+\_form#9=20x14:$ f_{{W}_{0}} $
+\_form#10=20x14:$ f_{{W}_{0}}$

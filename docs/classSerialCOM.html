@@ -70,29 +70,40 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>Class <a class="el" href="classSerialCOM.html" title="Class SerialCOM.">SerialCOM</a>.  
+ <a href="classSerialCOM.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="serial__com_8h_source.html">serial_com.h</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aa1013db36ab12d251ecdcc2ccd8be5c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCOM.html#aa1013db36ab12d251ecdcc2ccd8be5c8">SerialCOM</a> (std::string port, unsigned int baud_rate)</td></tr>
+<tr class="memdesc:aa1013db36ab12d251ecdcc2ccd8be5c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="classSerialCOM.html#aa1013db36ab12d251ecdcc2ccd8be5c8">More...</a><br /></td></tr>
 <tr class="separator:aa1013db36ab12d251ecdcc2ccd8be5c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a070df93b9b42ec1def321d5d710a94db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCOM.html#a070df93b9b42ec1def321d5d710a94db">writeString</a> (std::string s)</td></tr>
+<tr class="memdesc:a070df93b9b42ec1def321d5d710a94db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write a string to the serial device.  <a href="classSerialCOM.html#a070df93b9b42ec1def321d5d710a94db">More...</a><br /></td></tr>
 <tr class="separator:a070df93b9b42ec1def321d5d710a94db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ba1662c9c34f0a01ff4c05f063105a7"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7">readLine</a> (void)</td></tr>
+<tr class="memdesc:a9ba1662c9c34f0a01ff4c05f063105a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until a line is received from the serial device.  <a href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7">More...</a><br /></td></tr>
 <tr class="separator:a9ba1662c9c34f0a01ff4c05f063105a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a791075c79ddbd24cec0eee3d3ed97833"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCOM.html#a791075c79ddbd24cec0eee3d3ed97833">initialize_stream</a> (int iter=3)</td></tr>
+<tr class="memdesc:a791075c79ddbd24cec0eee3d3ed97833"><td class="mdescLeft">&#160;</td><td class="mdescRight">Setup up stream by reading the values a couple times first.  <a href="classSerialCOM.html#a791075c79ddbd24cec0eee3d3ed97833">More...</a><br /></td></tr>
 <tr class="separator:a791075c79ddbd24cec0eee3d3ed97833"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a1d212ebb72a6332df9307ca1c5114069"><td class="memItemLeft" align="right" valign="top">boost::asio::io_service&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">io</a></td></tr>
+<tr class="memdesc:a1d212ebb72a6332df9307ca1c5114069"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boost io service.  <a href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">More...</a><br /></td></tr>
 <tr class="separator:a1d212ebb72a6332df9307ca1c5114069"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adcb8a6f38ba292af486b3a304ce3421e"><td class="memItemLeft" align="right" valign="top">boost::asio::serial_port&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">serial</a></td></tr>
+<tr class="memdesc:adcb8a6f38ba292af486b3a304ce3421e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Boost serial port handle.  <a href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">More...</a><br /></td></tr>
 <tr class="separator:adcb8a6f38ba292af486b3a304ce3421e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00005">5</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
+<div class="textblock"><p >Class <a class="el" href="classSerialCOM.html" title="Class SerialCOM.">SerialCOM</a>. </p>
+<p >This class handles all the serial communication between the PC and the exoskeleton board. It's based on boost::asio. See <a href="https://www.boost.org/doc/libs/1_75_0/doc/html/boost_asio.html">https://www.boost.org/doc/libs/1_75_0/doc/html/boost_asio.html</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00012">12</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa1013db36ab12d251ecdcc2ccd8be5c8" name="aa1013db36ab12d251ecdcc2ccd8be5c8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa1013db36ab12d251ecdcc2ccd8be5c8">&#9670;&nbsp;</a></span>SerialCOM()</h2>
@@ -127,27 +138,29 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Constructor. </p>
 <p >Constructor. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>device name, example "/dev/ttyUSB0" or "COM4" </td></tr>
-    <tr><td class="paramname">baud_rate</td><td>communication speed, example 9600 or 115200 </td></tr>
+    <tr><td class="paramname">port</td><td>device name, example "/dev/ttyUSB0" or "COM4". </td></tr>
+    <tr><td class="paramname">baud_rate</td><td>communication speed, example 9600 or 115200. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">boost::system::system_error</td><td>if cannot open the serial device </td></tr>
+    <tr><td class="paramname">boost::system::system_error</td><td>if cannot open the serial device. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00015">15</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>    : <a class="code hl_variable" href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">io</a>(), <a class="code hl_variable" href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">serial</a>(<a class="code hl_variable" href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">io</a>,port)</div>
-<div class="line"><span class="lineno">   17</span>    {</div>
-<div class="line"><span class="lineno">   18</span>        <a class="code hl_variable" href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">serial</a>.set_option(boost::asio::serial_port_base::baud_rate(baud_rate));</div>
-<div class="line"><span class="lineno">   19</span>    }</div>
-<div class="ttc" id="aclassSerialCOM_html_a1d212ebb72a6332df9307ca1c5114069"><div class="ttname"><a href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">SerialCOM::io</a></div><div class="ttdeci">boost::asio::io_service io</div><div class="ttdef"><b>Definition:</b> <a href="serial__com_8h_source.html#l00031">serial_com.h:31</a></div></div>
-<div class="ttc" id="aclassSerialCOM_html_adcb8a6f38ba292af486b3a304ce3421e"><div class="ttname"><a href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">SerialCOM::serial</a></div><div class="ttdeci">boost::asio::serial_port serial</div><div class="ttdef"><b>Definition:</b> <a href="serial__com_8h_source.html#l00032">serial_com.h:32</a></div></div>
+<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00023">23</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   24</span>    : <a class="code hl_variable" href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">io</a>(), <a class="code hl_variable" href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">serial</a>(<a class="code hl_variable" href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">io</a>,port)</div>
+<div class="line"><span class="lineno">   25</span>    {</div>
+<div class="line"><span class="lineno">   26</span>        <a class="code hl_variable" href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">serial</a>.set_option(boost::asio::serial_port_base::baud_rate(baud_rate));</div>
+<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="ttc" id="aclassSerialCOM_html_a1d212ebb72a6332df9307ca1c5114069"><div class="ttname"><a href="classSerialCOM.html#a1d212ebb72a6332df9307ca1c5114069">SerialCOM::io</a></div><div class="ttdeci">boost::asio::io_service io</div><div class="ttdoc">Boost io service.</div><div class="ttdef"><b>Definition:</b> <a href="serial__com_8h_source.html#l00040">serial_com.h:40</a></div></div>
+<div class="ttc" id="aclassSerialCOM_html_adcb8a6f38ba292af486b3a304ce3421e"><div class="ttname"><a href="classSerialCOM.html#adcb8a6f38ba292af486b3a304ce3421e">SerialCOM::serial</a></div><div class="ttdeci">boost::asio::serial_port serial</div><div class="ttdoc">Boost serial port handle.</div><div class="ttdef"><b>Definition:</b> <a href="serial__com_8h_source.html#l00043">serial_com.h:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -168,22 +181,30 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serial__com_8cpp_source.html#l00040">40</a> of file <a class="el" href="serial__com_8cpp_source.html">serial_com.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
-<div class="line"><span class="lineno">   42</span>    <span class="comment">// Read first 100 lines to start</span></div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; iter; i++)</div>
-<div class="line"><span class="lineno">   44</span>    {</div>
-<div class="line"><span class="lineno">   45</span>      std::string incoming_str = this-&gt;<a class="code hl_function" href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7">readLine</a>();</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span>}</div>
-<div class="ttc" id="aclassSerialCOM_html_a9ba1662c9c34f0a01ff4c05f063105a7"><div class="ttname"><a href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7">SerialCOM::readLine</a></div><div class="ttdeci">std::string readLine(void)</div><div class="ttdef"><b>Definition:</b> <a href="serial__com_8cpp_source.html#l00019">serial_com.cpp:19</a></div></div>
+<p>Setup up stream by reading the values a couple times first. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter</td><td>Number of times to read for warming up. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="serial__com_8cpp_source.html#l00045">45</a> of file <a class="el" href="serial__com_8cpp_source.html">serial_com.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   46</span>{</div>
+<div class="line"><span class="lineno">   47</span>    <span class="comment">// Read first (iter) lines to start</span></div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; iter; i++)</div>
+<div class="line"><span class="lineno">   49</span>    {</div>
+<div class="line"><span class="lineno">   50</span>      std::string incoming_str = this-&gt;<a class="code hl_function" href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7">readLine</a>();</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>}</div>
+<div class="ttc" id="aclassSerialCOM_html_a9ba1662c9c34f0a01ff4c05f063105a7"><div class="ttname"><a href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7">SerialCOM::readLine</a></div><div class="ttdeci">std::string readLine(void)</div><div class="ttdoc">Blocks until a line is received from the serial device.</div><div class="ttdef"><b>Definition:</b> <a href="serial__com_8cpp_source.html#l00019">serial_com.cpp:19</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSerialCOM_a791075c79ddbd24cec0eee3d3ed97833_cgraph.png" border="0" usemap="#aclassSerialCOM_a791075c79ddbd24cec0eee3d3ed97833_cgraph" alt=""/></div>
 <map name="aclassSerialCOM_a791075c79ddbd24cec0eee3d3ed97833_cgraph" id="aclassSerialCOM_a791075c79ddbd24cec0eee3d3ed97833_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7" title=" " alt="" coords="208,13,363,39"/>
+<area shape="rect" title="Setup up stream by reading the values a couple times first." alt="" coords="5,5,160,47"/>
+<area shape="rect" href="classSerialCOM.html#a9ba1662c9c34f0a01ff4c05f063105a7" title="Blocks until a line is received from the serial device." alt="" coords="208,13,363,39"/>
 </map>
 </div>
 
@@ -204,12 +225,14 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Blocks until a line is received from the serial device. </p>
 <p >Blocks until a line is received from the serial device. Eventual '<br  />
 ' or '\r<br  />
-' characters at the end of the string are removed. </p><dl class="section return"><dt>Returns</dt><dd>a string containing the received line </dd></dl>
+' characters at the end of the string are removed. </p><dl class="section return"><dt>Returns</dt><dd>a string containing the received line. </dd></dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">boost::system::system_error</td><td>on failure </td></tr>
+    <tr><td class="paramname">boost::system::system_error</td><td>on failure. </td></tr>
   </table>
   </dd>
 </dl>
@@ -240,8 +263,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSerialCOM_a9ba1662c9c34f0a01ff4c05f063105a7_icgraph.png" border="0" usemap="#aclassSerialCOM_a9ba1662c9c34f0a01ff4c05f063105a7_icgraph" alt=""/></div>
 <map name="aclassSerialCOM_a9ba1662c9c34f0a01ff4c05f063105a7_icgraph" id="aclassSerialCOM_a9ba1662c9c34f0a01ff4c05f063105a7_icgraph">
-<area shape="rect" title=" " alt="" coords="208,13,363,39"/>
-<area shape="rect" href="classSerialCOM.html#a791075c79ddbd24cec0eee3d3ed97833" title=" " alt="" coords="5,5,160,47"/>
+<area shape="rect" title="Blocks until a line is received from the serial device." alt="" coords="208,13,363,39"/>
+<area shape="rect" href="classSerialCOM.html#a791075c79ddbd24cec0eee3d3ed97833" title="Setup up stream by reading the values a couple times first." alt="" coords="5,5,160,47"/>
 </map>
 </div>
 
@@ -262,15 +285,17 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Write a string to the serial device. </p>
 <p >Write a string to the serial device. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">s</td><td>string to write </td></tr>
+    <tr><td class="paramname">s</td><td>string to write. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">boost::system::system_error</td><td>on failure </td></tr>
+    <tr><td class="paramname">boost::system::system_error</td><td>on failure. </td></tr>
   </table>
   </dd>
 </dl>
@@ -304,7 +329,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00031">31</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
+<p>Boost io service. </p>
+
+<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00040">40</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
 
 </div>
 </div>
@@ -328,7 +355,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00032">32</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
+<p>Boost serial port handle. </p>
+
+<p class="definition">Definition at line <a class="el" href="serial__com_8h_source.html#l00043">43</a> of file <a class="el" href="serial__com_8h_source.html">serial_com.h</a>.</p>
 
 </div>
 </div>

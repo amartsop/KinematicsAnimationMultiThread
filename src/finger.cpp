@@ -1,6 +1,15 @@
 #include "../include/finger.h"
 
-// Initialize finger
+/**
+ * @brief This initialization function first parses the finger configuration 
+ * file (see Hand::m_config_rel_path) and sets up the properties of the finger.
+ * It also loads and processes the meshes for the links and the joints and 
+ * initializes the finger state.
+ * @param name_id The name id of the finger.
+ * @param json_file The json finger configuration file.
+ * @param viewer Pointer to the viewer handle.
+ * @param mesh_idx The mesh index.
+ */
 void Finger::initialize(const std::string& name_id,
     const nlohmann::json& json_file, igl::opengl::glfw::Viewer *viewer,
     int mesh_idx)
@@ -35,9 +44,20 @@ void Finger::initialize(const std::string& name_id,
     update(m_state_vec);
 }
 
-// Update state
+/**
+ * @brief This function updates the finger's state (position and orientation 
+ * of its links and joints). It performs the forward kinematics for each link 
+ * of the finger. It first calculates the local transform of each links with 
+ * respect to each previous link. Then it calculates the global transforms 
+ * (with respect to the hand's base frame \f$ f_{{W}_{0}}\f$) by performing 
+ * and iterative compound transormation (post-miltiply rules, see 
+ * Forward Kinematics Spong * Robot Modeling and Control). The frame conventions 
+ * and the definitions of the rotation and translation matrices used are 
+ * given in the handover document.
+ * @param state The vector of joint euler angles and postions as
+ * defined in dm::JointStateu.
+ */
 void Finger::update(const std::vector<dm::JointState>& state)
-    
 {
     // Update state vector
     m_state_vec =  state;
@@ -100,7 +120,13 @@ void Finger::update(const std::vector<dm::JointState>& state)
     }
 }
 
-// Initialize state
+/**
+ * @brief It initializes the state of the finger based on the link_lengths and 
+ * their origins as defined from the configuration file
+ * (Hand::m_config_rel_path)
+ * @param link_lengths The lengths of the links.
+ * @param origin The origins of the links.
+ */
 void Finger::initialize_state(const std::vector<double>& link_lengths, 
     const dm::JointState& origin)
 {
@@ -126,7 +152,11 @@ void Finger::initialize_state(const std::vector<double>& link_lengths,
     }
 }
 
-// Initialize mesh files
+/**
+ * @brief It initializes the mesh containers for its link and joint 
+ * based on their properties defined in the configuration file
+ * Hand::m_config_rel_path.
+ */
 void Finger::initialize_mesh_containers(void)
 {
     // Get mesh files absolute filenames
@@ -146,7 +176,11 @@ void Finger::initialize_mesh_containers(void)
     }
 }
 
-// Load mesh files
+/**
+ * @brief Simply loads the meshes to the viewer.
+ * 
+ * @param viewer Pointer to the viewer object.
+ */
 void Finger::load_mesh_files(igl::opengl::glfw::Viewer *viewer)
 {
     for (size_t i = 0; i < m_meshes_filenames.size(); i++)
@@ -155,7 +189,11 @@ void Finger::load_mesh_files(igl::opengl::glfw::Viewer *viewer)
     }
 }
 
-// Get mesh data 
+/**
+ * @brief It passes a copy of the vertex data from the viewer to the local 
+ * member variables of the finger instance.
+ * @param viewer Pointer to the viewer object.
+ */
 void Finger::get_mesh_data(igl::opengl::glfw::Viewer *viewer)
 {
     for (size_t i = m_viewer_data_lower_idx; i <= m_viewer_data_upper_idx; i++)
@@ -168,7 +206,10 @@ void Finger::get_mesh_data(igl::opengl::glfw::Viewer *viewer)
     }
 }
 
-// Postprocess meshses
+/**
+ * @brief It sets the scale of the meshes based on the links length and the
+ *  joints desired size.
+ */
 void Finger::postprocess_meshes(void)
 {
     // Scale meshes
@@ -199,7 +240,11 @@ void Finger::postprocess_meshes(void)
     }
 }
 
-// Parse the json file
+/**
+ * @brief Simply parses the finger configuration file.
+ * 
+ * @param json_file The json file namek
+ */
 void Finger::parse_json_file(const nlohmann::json& json_file)
 {
     // Get lengths

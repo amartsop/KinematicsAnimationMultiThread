@@ -71,13 +71,16 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
+<p>This class generates a finger of n links. The number of links and their properties are defined by a json configuration file. It also calculates the forwared kinematics of the finger given the rotation of its joints and its origin.  
+ <a href="classFinger.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="finger_8h_source.html">finger.h</a>&gt;</code></p>
 <div class="dynheader">
 Collaboration diagram for Finger:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger__coll__graph.png" border="0" usemap="#aFinger_coll__map" alt="Collaboration graph"/></div>
 <map name="aFinger_coll__map" id="aFinger_coll__map">
-<area shape="rect" title=" " alt="" coords="32,95,93,121"/>
+<area shape="rect" title="This class generates a finger of n links. The number of links and their properties are defined by a j..." alt="" coords="32,95,93,121"/>
 <area shape="rect" href="structdm_1_1JointState.html" title=" " alt="" coords="5,5,120,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -87,75 +90,106 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa71829d5592249136d8f8c3128bc757b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#aa71829d5592249136d8f8c3128bc757b">Finger</a> ()</td></tr>
 <tr class="separator:aa71829d5592249136d8f8c3128bc757b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a04be694106c7b4bb8ebe599f0cad3c8e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e">initialize</a> (const std::string &amp;name_id, const nlohmann::json &amp;json_file, igl::opengl::glfw::Viewer *viewer, int mesh_idx)</td></tr>
+<tr class="memdesc:a04be694106c7b4bb8ebe599f0cad3c8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize finger.  <a href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e">More...</a><br /></td></tr>
 <tr class="separator:a04be694106c7b4bb8ebe599f0cad3c8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcb6f77bbc5234f68cb72f05cb6f4544"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544">update</a> (const std::vector&lt; <a class="el" href="structdm_1_1JointState.html">dm::JointState</a> &gt; &amp;state)</td></tr>
+<tr class="memdesc:abcb6f77bbc5234f68cb72f05cb6f4544"><td class="mdescLeft">&#160;</td><td class="mdescRight">Update state.  <a href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544">More...</a><br /></td></tr>
 <tr class="separator:abcb6f77bbc5234f68cb72f05cb6f4544"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55f31c7a4dd5a79fafcd6f3aeb185f4e"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a55f31c7a4dd5a79fafcd6f3aeb185f4e">get_vertices</a> (void)</td></tr>
+<tr class="memdesc:a55f31c7a4dd5a79fafcd6f3aeb185f4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get finger vertices.  <a href="classFinger.html#a55f31c7a4dd5a79fafcd6f3aeb185f4e">More...</a><br /></td></tr>
 <tr class="separator:a55f31c7a4dd5a79fafcd6f3aeb185f4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6702a357d2b39fbf23b321742b215bb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ad6702a357d2b39fbf23b321742b215bb">get_frame_ids</a> (void)</td></tr>
+<tr class="memdesc:ad6702a357d2b39fbf23b321742b215bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the ids of the finger frames.  <a href="classFinger.html#ad6702a357d2b39fbf23b321742b215bb">More...</a><br /></td></tr>
 <tr class="separator:ad6702a357d2b39fbf23b321742b215bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4da29fccb583c940c6d3697da5a1f184"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184">load_mesh_files</a> (igl::opengl::glfw::Viewer *viewer)</td></tr>
+<tr class="memdesc:a4da29fccb583c940c6d3697da5a1f184"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load finger mesh files.  <a href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184">More...</a><br /></td></tr>
 <tr class="separator:a4da29fccb583c940c6d3697da5a1f184"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19d9c4afc7729604a4a102506bd295e8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdm_1_1JointState.html">dm::JointState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a19d9c4afc7729604a4a102506bd295e8">get_state</a> (void)</td></tr>
+<tr class="memdesc:a19d9c4afc7729604a4a102506bd295e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get current state of the finger.  <a href="classFinger.html#a19d9c4afc7729604a4a102506bd295e8">More...</a><br /></td></tr>
 <tr class="separator:a19d9c4afc7729604a4a102506bd295e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aaa5dfee5d7ae0443a910237f9ec84079"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079">parse_json_file</a> (const nlohmann::json &amp;json_file)</td></tr>
+<tr class="memdesc:aaa5dfee5d7ae0443a910237f9ec84079"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the finger configuration json file.  <a href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079">More...</a><br /></td></tr>
 <tr class="separator:aaa5dfee5d7ae0443a910237f9ec84079"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad927b17728889a0c6b82ebac8d863960"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ad927b17728889a0c6b82ebac8d863960">initialize_mesh_containers</a> (void)</td></tr>
+<tr class="memdesc:ad927b17728889a0c6b82ebac8d863960"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize mesh files.  <a href="classFinger.html#ad927b17728889a0c6b82ebac8d863960">More...</a><br /></td></tr>
 <tr class="separator:ad927b17728889a0c6b82ebac8d863960"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3fd6d2f0bf68bcb36b562932b87b65b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b">get_mesh_data</a> (igl::opengl::glfw::Viewer *viewer)</td></tr>
+<tr class="memdesc:ac3fd6d2f0bf68bcb36b562932b87b65b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get mesh data.  <a href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b">More...</a><br /></td></tr>
 <tr class="separator:ac3fd6d2f0bf68bcb36b562932b87b65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96d28dd842024a3df7dfbf6e9010661d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d">postprocess_meshes</a> (void)</td></tr>
+<tr class="memdesc:a96d28dd842024a3df7dfbf6e9010661d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Postproccess meshes.  <a href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d">More...</a><br /></td></tr>
 <tr class="separator:a96d28dd842024a3df7dfbf6e9010661d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b4f8fbc30b217c5f7b17520c81426e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e">initialize_state</a> (const std::vector&lt; double &gt; &amp;link_lengths, const <a class="el" href="structdm_1_1JointState.html">dm::JointState</a> &amp;origin)</td></tr>
+<tr class="memdesc:a02b4f8fbc30b217c5f7b17520c81426e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize state.  <a href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e">More...</a><br /></td></tr>
 <tr class="separator:a02b4f8fbc30b217c5f7b17520c81426e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad18b921f83545f57dfa5936251fbd664"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a></td></tr>
+<tr class="memdesc:ad18b921f83545f57dfa5936251fbd664"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> name id.  <a href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">More...</a><br /></td></tr>
 <tr class="separator:ad18b921f83545f57dfa5936251fbd664"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab62f1efe0416ad749c6c6f26a1c8949d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structdm_1_1JointState.html">dm::JointState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a></td></tr>
+<tr class="memdesc:ab62f1efe0416ad749c6c6f26a1c8949d"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> origin.  <a href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">More...</a><br /></td></tr>
 <tr class="separator:ab62f1efe0416ad749c6c6f26a1c8949d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3cadbce43a8889abb0c092e14785ed08"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a></td></tr>
+<tr class="memdesc:a3cadbce43a8889abb0c092e14785ed08"><td class="mdescLeft">&#160;</td><td class="mdescRight">The lengths of the finger links.  <a href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">More...</a><br /></td></tr>
 <tr class="separator:a3cadbce43a8889abb0c092e14785ed08"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ea40e480d4c479827ef97533b3fc26d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">m_frame_ids</a></td></tr>
+<tr class="memdesc:a0ea40e480d4c479827ef97533b3fc26d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The frame ids of the finger.  <a href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">More...</a><br /></td></tr>
 <tr class="separator:a0ea40e480d4c479827ef97533b3fc26d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a113457c9043e7c365e07b721d08d524a"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a113457c9043e7c365e07b721d08d524a">m_joint_rel_filename</a> = &quot;share/joint.obj&quot;</td></tr>
+<tr class="memdesc:a113457c9043e7c365e07b721d08d524a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint mesh file.  <a href="classFinger.html#a113457c9043e7c365e07b721d08d524a">More...</a><br /></td></tr>
 <tr class="separator:a113457c9043e7c365e07b721d08d524a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a831b540bc056f0f2e9c18343a0074553"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a831b540bc056f0f2e9c18343a0074553">m_bone_rel_filename</a> = &quot;share/bone.obj&quot;</td></tr>
+<tr class="memdesc:a831b540bc056f0f2e9c18343a0074553"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bone (link) mesh file.  <a href="classFinger.html#a831b540bc056f0f2e9c18343a0074553">More...</a><br /></td></tr>
 <tr class="separator:a831b540bc056f0f2e9c18343a0074553"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f2c84e14721446e17299115d7c02ebb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a></td></tr>
+<tr class="memdesc:a9f2c84e14721446e17299115d7c02ebb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mesh files for joints and bones(links).  <a href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">More...</a><br /></td></tr>
 <tr class="separator:a9f2c84e14721446e17299115d7c02ebb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2fb1e29c1ad22283b57f8793f4e8860d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a2fb1e29c1ad22283b57f8793f4e8860d">m_joint_scale</a> = 0.05</td></tr>
+<tr class="memdesc:a2fb1e29c1ad22283b57f8793f4e8860d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Joint scales.  <a href="classFinger.html#a2fb1e29c1ad22283b57f8793f4e8860d">More...</a><br /></td></tr>
 <tr class="separator:a2fb1e29c1ad22283b57f8793f4e8860d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add202bd396404d3dc71f855f0293811a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a></td></tr>
+<tr class="memdesc:add202bd396404d3dc71f855f0293811a"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> scales.  <a href="classFinger.html#add202bd396404d3dc71f855f0293811a">More...</a><br /></td></tr>
 <tr class="separator:add202bd396404d3dc71f855f0293811a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0b70dd35ea884ef082aff06d630a1340"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a></td></tr>
+<tr class="memdesc:a0b70dd35ea884ef082aff06d630a1340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewer data lower idx see (<a class="el" href="classHand.html#a508c4c71b757d369ba371c0a55f7d6fd">Hand::m_viewer_data_lower_idx</a>).  <a href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">More...</a><br /></td></tr>
 <tr class="separator:a0b70dd35ea884ef082aff06d630a1340"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af365139746d6a37072d715274a84d5f6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#af365139746d6a37072d715274a84d5f6">m_viewer_data_upper_idx</a></td></tr>
+<tr class="memdesc:af365139746d6a37072d715274a84d5f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Viewer data upper idx (see <a class="el" href="classHand.html#a508c4c71b757d369ba371c0a55f7d6fd">Hand::m_viewer_data_lower_idx</a>).  <a href="classFinger.html#af365139746d6a37072d715274a84d5f6">More...</a><br /></td></tr>
 <tr class="separator:af365139746d6a37072d715274a84d5f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a21e8ba4afda72979241581b1b0f54374"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a></td></tr>
+<tr class="memdesc:a21e8ba4afda72979241581b1b0f54374"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertices data (original).  <a href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">More...</a><br /></td></tr>
 <tr class="separator:a21e8ba4afda72979241581b1b0f54374"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae44d33fd2df3e4968cd36a02a1288989"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a></td></tr>
+<tr class="memdesc:ae44d33fd2df3e4968cd36a02a1288989"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertices data (original homogeneous).  <a href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">More...</a><br /></td></tr>
 <tr class="separator:ae44d33fd2df3e4968cd36a02a1288989"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a34a55aaeece25e46b9a22f0f461eaed8"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a></td></tr>
+<tr class="memdesc:a34a55aaeece25e46b9a22f0f461eaed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertices data.  <a href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">More...</a><br /></td></tr>
 <tr class="separator:a34a55aaeece25e46b9a22f0f461eaed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa68e739461921f983c128aa2929b76df"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::MatrixXi &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#aa68e739461921f983c128aa2929b76df">m_faces_data</a></td></tr>
+<tr class="memdesc:aa68e739461921f983c128aa2929b76df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Faces data.  <a href="classFinger.html#aa68e739461921f983c128aa2929b76df">More...</a><br /></td></tr>
 <tr class="separator:aa68e739461921f983c128aa2929b76df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab4508a2f115615efe39be06acb57e78f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structdm_1_1JointState.html">dm::JointState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a></td></tr>
+<tr class="memdesc:ab4508a2f115615efe39be06acb57e78f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> state.  <a href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">More...</a><br /></td></tr>
 <tr class="separator:ab4508a2f115615efe39be06acb57e78f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad258daba0dbf462136b269e5c4b657d"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a></td></tr>
+<tr class="memdesc:aad258daba0dbf462136b269e5c4b657d"><td class="mdescLeft">&#160;</td><td class="mdescRight">State size.  <a href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">More...</a><br /></td></tr>
 <tr class="separator:aad258daba0dbf462136b269e5c4b657d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ace33a56119755934d98e839a69d193fc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::Matrix4d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a></td></tr>
+<tr class="memdesc:ace33a56119755934d98e839a69d193fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local transforamation matrix.  <a href="classFinger.html#ace33a56119755934d98e839a69d193fc">More...</a><br /></td></tr>
 <tr class="separator:ace33a56119755934d98e839a69d193fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ace8ab4c3bc54a477abd8422f35e67"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::Matrix4d &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a></td></tr>
+<tr class="memdesc:a61ace8ab4c3bc54a477abd8422f35e67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global transforamation matrix.  <a href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">More...</a><br /></td></tr>
 <tr class="separator:a61ace8ab4c3bc54a477abd8422f35e67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00014">14</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<div class="textblock"><p >This class generates a finger of n links. The number of links and their properties are defined by a json configuration file. It also calculates the forwared kinematics of the finger given the rotation of its joints and its origin. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00020">20</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa71829d5592249136d8f8c3128bc757b" name="aa71829d5592249136d8f8c3128bc757b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa71829d5592249136d8f8c3128bc757b">&#9670;&nbsp;</a></span>Finger()</h2>
@@ -180,8 +214,8 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00017">17</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>{};</div>
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00023">23</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   23</span>{};</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,9 +244,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00030">30</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   30</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">m_frame_ids</a>; };</div>
-<div class="ttc" id="aclassFinger_html_a0ea40e480d4c479827ef97533b3fc26d"><div class="ttname"><a href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">Finger::m_frame_ids</a></div><div class="ttdeci">std::vector&lt; int &gt; m_frame_ids</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00050">finger.h:50</a></div></div>
+<p>Get the ids of the finger frames. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00036">36</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">m_frame_ids</a>; };</div>
+<div class="ttc" id="aclassFinger_html_a0ea40e480d4c479827ef97533b3fc26d"><div class="ttname"><a href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">Finger::m_frame_ids</a></div><div class="ttdeci">std::vector&lt; int &gt; m_frame_ids</div><div class="ttdoc">The frame ids of the finger.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00056">finger.h:56</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -240,28 +276,37 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00159">159</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  160</span>{</div>
-<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = <a class="code hl_variable" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a>; i &lt;= <a class="code hl_variable" href="classFinger.html#af365139746d6a37072d715274a84d5f6">m_viewer_data_upper_idx</a>; i++)</div>
-<div class="line"><span class="lineno">  162</span>    {</div>
-<div class="line"><span class="lineno">  163</span>        <span class="comment">// Push back vertices data</span></div>
-<div class="line"><span class="lineno">  164</span>        <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.push_back(viewer-&gt;data_list.at(i).V);</div>
-<div class="line"><span class="lineno">  165</span> </div>
-<div class="line"><span class="lineno">  166</span>        <span class="comment">// Push back faces data</span></div>
-<div class="line"><span class="lineno">  167</span>        <a class="code hl_variable" href="classFinger.html#aa68e739461921f983c128aa2929b76df">m_faces_data</a>.push_back(viewer-&gt;data_list.at(i).F);</div>
-<div class="line"><span class="lineno">  168</span>    }</div>
-<div class="line"><span class="lineno">  169</span>}</div>
-<div class="ttc" id="aclassFinger_html_a0b70dd35ea884ef082aff06d630a1340"><div class="ttname"><a href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">Finger::m_viewer_data_lower_idx</a></div><div class="ttdeci">int m_viewer_data_lower_idx</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00074">finger.h:74</a></div></div>
-<div class="ttc" id="aclassFinger_html_a21e8ba4afda72979241581b1b0f54374"><div class="ttname"><a href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">Finger::m_vertices_data_o</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXd &gt; m_vertices_data_o</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00082">finger.h:82</a></div></div>
-<div class="ttc" id="aclassFinger_html_aa68e739461921f983c128aa2929b76df"><div class="ttname"><a href="classFinger.html#aa68e739461921f983c128aa2929b76df">Finger::m_faces_data</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXi &gt; m_faces_data</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00091">finger.h:91</a></div></div>
-<div class="ttc" id="aclassFinger_html_af365139746d6a37072d715274a84d5f6"><div class="ttname"><a href="classFinger.html#af365139746d6a37072d715274a84d5f6">Finger::m_viewer_data_upper_idx</a></div><div class="ttdeci">int m_viewer_data_upper_idx</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00074">finger.h:74</a></div></div>
+<p>Get mesh data. </p>
+<p >It passes a copy of the vertex data from the viewer to the local member variables of the finger instance.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewer</td><td>Pointer to the viewer object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00197">197</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  198</span>{</div>
+<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = <a class="code hl_variable" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a>; i &lt;= <a class="code hl_variable" href="classFinger.html#af365139746d6a37072d715274a84d5f6">m_viewer_data_upper_idx</a>; i++)</div>
+<div class="line"><span class="lineno">  200</span>    {</div>
+<div class="line"><span class="lineno">  201</span>        <span class="comment">// Push back vertices data</span></div>
+<div class="line"><span class="lineno">  202</span>        <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.push_back(viewer-&gt;data_list.at(i).V);</div>
+<div class="line"><span class="lineno">  203</span> </div>
+<div class="line"><span class="lineno">  204</span>        <span class="comment">// Push back faces data</span></div>
+<div class="line"><span class="lineno">  205</span>        <a class="code hl_variable" href="classFinger.html#aa68e739461921f983c128aa2929b76df">m_faces_data</a>.push_back(viewer-&gt;data_list.at(i).F);</div>
+<div class="line"><span class="lineno">  206</span>    }</div>
+<div class="line"><span class="lineno">  207</span>}</div>
+<div class="ttc" id="aclassFinger_html_a0b70dd35ea884ef082aff06d630a1340"><div class="ttname"><a href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">Finger::m_viewer_data_lower_idx</a></div><div class="ttdeci">int m_viewer_data_lower_idx</div><div class="ttdoc">Viewer data lower idx see (Hand::m_viewer_data_lower_idx).</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00082">finger.h:82</a></div></div>
+<div class="ttc" id="aclassFinger_html_a21e8ba4afda72979241581b1b0f54374"><div class="ttname"><a href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">Finger::m_vertices_data_o</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXd &gt; m_vertices_data_o</div><div class="ttdoc">Vertices data (original).</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00094">finger.h:94</a></div></div>
+<div class="ttc" id="aclassFinger_html_aa68e739461921f983c128aa2929b76df"><div class="ttname"><a href="classFinger.html#aa68e739461921f983c128aa2929b76df">Finger::m_faces_data</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXi &gt; m_faces_data</div><div class="ttdoc">Faces data.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00103">finger.h:103</a></div></div>
+<div class="ttc" id="aclassFinger_html_af365139746d6a37072d715274a84d5f6"><div class="ttname"><a href="classFinger.html#af365139746d6a37072d715274a84d5f6">Finger::m_viewer_data_upper_idx</a></div><div class="ttdeci">int m_viewer_data_upper_idx</div><div class="ttdoc">Viewer data upper idx (see Hand::m_viewer_data_lower_idx).</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00085">finger.h:85</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_ac3fd6d2f0bf68bcb36b562932b87b65b_icgraph.png" border="0" usemap="#aclassFinger_ac3fd6d2f0bf68bcb36b562932b87b65b_icgraph" alt=""/></div>
 <map name="aclassFinger_ac3fd6d2f0bf68bcb36b562932b87b65b_icgraph" id="aclassFinger_ac3fd6d2f0bf68bcb36b562932b87b65b_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,348,32"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" title="Get mesh data." alt="" coords="179,5,348,32"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,5,131,32"/>
 </map>
 </div>
 
@@ -291,9 +336,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00036">36</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>; }</div>
-<div class="ttc" id="aclassFinger_html_ab4508a2f115615efe39be06acb57e78f"><div class="ttname"><a href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">Finger::m_state_vec</a></div><div class="ttdeci">std::vector&lt; dm::JointState &gt; m_state_vec</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00103">finger.h:103</a></div></div>
+<p>Get current state of the finger. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00042">42</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>; }</div>
+<div class="ttc" id="aclassFinger_html_ab4508a2f115615efe39be06acb57e78f"><div class="ttname"><a href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">Finger::m_state_vec</a></div><div class="ttdeci">std::vector&lt; dm::JointState &gt; m_state_vec</div><div class="ttdoc">Finger state.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00115">finger.h:115</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -321,9 +368,11 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00027">27</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>; }</div>
-<div class="ttc" id="aclassFinger_html_a34a55aaeece25e46b9a22f0f461eaed8"><div class="ttname"><a href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">Finger::m_vertices_data</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXd &gt; m_vertices_data</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00088">finger.h:88</a></div></div>
+<p>Get finger vertices. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00033">33</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   33</span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>; }</div>
+<div class="ttc" id="aclassFinger_html_a34a55aaeece25e46b9a22f0f461eaed8"><div class="ttname"><a href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">Finger::m_vertices_data</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXd &gt; m_vertices_data</div><div class="ttdoc">Vertices data.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00100">finger.h:100</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -365,65 +414,77 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00004">4</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    7</span>{</div>
-<div class="line"><span class="lineno">    8</span>    <span class="comment">// Get finger id</span></div>
-<div class="line"><span class="lineno">    9</span>    <a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a> = name_id;</div>
-<div class="line"><span class="lineno">   10</span> </div>
-<div class="line"><span class="lineno">   11</span>    <span class="comment">// Parse the json file</span></div>
-<div class="line"><span class="lineno">   12</span>    <a class="code hl_function" href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079">parse_json_file</a>(json_file);</div>
-<div class="line"><span class="lineno">   13</span> </div>
-<div class="line"><span class="lineno">   14</span>    <span class="comment">// Initialize mesh files</span></div>
-<div class="line"><span class="lineno">   15</span>    <a class="code hl_function" href="classFinger.html#ad927b17728889a0c6b82ebac8d863960">initialize_mesh_containers</a>();</div>
-<div class="line"><span class="lineno">   16</span> </div>
-<div class="line"><span class="lineno">   17</span>    <span class="comment">// Load mesh files</span></div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184">load_mesh_files</a>(viewer);</div>
+<p>Initialize finger. </p>
+<p >This initialization function first parses the finger configuration file (see <a class="el" href="classHand.html#a36017946352efe19758d7fb1e4bc14ae">Hand::m_config_rel_path</a>) and sets up the properties of the finger. It also loads and processes the meshes for the links and the joints and initializes the finger state.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">name_id</td><td>The name id of the finger. </td></tr>
+    <tr><td class="paramname">json_file</td><td>The json finger configuration file. </td></tr>
+    <tr><td class="paramname">viewer</td><td>Pointer to the viewer handle. </td></tr>
+    <tr><td class="paramname">mesh_idx</td><td>The mesh index. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00013">13</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>{</div>
+<div class="line"><span class="lineno">   17</span>    <span class="comment">// Get finger id</span></div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a> = name_id;</div>
 <div class="line"><span class="lineno">   19</span> </div>
-<div class="line"><span class="lineno">   20</span>    <span class="comment">// Set viewer data indices</span></div>
-<div class="line"><span class="lineno">   21</span>    <a class="code hl_variable" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a> = mesh_idx;</div>
-<div class="line"><span class="lineno">   22</span>    <a class="code hl_variable" href="classFinger.html#af365139746d6a37072d715274a84d5f6">m_viewer_data_upper_idx</a> = <a class="code hl_variable" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a> +</div>
-<div class="line"><span class="lineno">   23</span>        (<a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.size() - 1);</div>
-<div class="line"><span class="lineno">   24</span>    </div>
-<div class="line"><span class="lineno">   25</span>    <span class="comment">// Get mesh data</span></div>
-<div class="line"><span class="lineno">   26</span>    <a class="code hl_function" href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b">get_mesh_data</a>(viewer);</div>
-<div class="line"><span class="lineno">   27</span>    </div>
-<div class="line"><span class="lineno">   28</span>    <span class="comment">// Postprocess meshes</span></div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_function" href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d">postprocess_meshes</a>();</div>
-<div class="line"><span class="lineno">   30</span>    </div>
-<div class="line"><span class="lineno">   31</span>    <span class="comment">// Initialize state</span></div>
-<div class="line"><span class="lineno">   32</span>    <a class="code hl_function" href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e">initialize_state</a>(<a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>, <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>);</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    <span class="comment">// Initialize meshes</span></div>
-<div class="line"><span class="lineno">   35</span>    <a class="code hl_function" href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544">update</a>(<a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>);</div>
-<div class="line"><span class="lineno">   36</span>}</div>
-<div class="ttc" id="aclassFinger_html_a02b4f8fbc30b217c5f7b17520c81426e"><div class="ttname"><a href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e">Finger::initialize_state</a></div><div class="ttdeci">void initialize_state(const std::vector&lt; double &gt; &amp;link_lengths, const dm::JointState &amp;origin)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00104">finger.cpp:104</a></div></div>
-<div class="ttc" id="aclassFinger_html_a3cadbce43a8889abb0c092e14785ed08"><div class="ttname"><a href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">Finger::m_link_lengths</a></div><div class="ttdeci">std::vector&lt; double &gt; m_link_lengths</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00047">finger.h:47</a></div></div>
-<div class="ttc" id="aclassFinger_html_a4da29fccb583c940c6d3697da5a1f184"><div class="ttname"><a href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184">Finger::load_mesh_files</a></div><div class="ttdeci">void load_mesh_files(igl::opengl::glfw::Viewer *viewer)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00150">finger.cpp:150</a></div></div>
-<div class="ttc" id="aclassFinger_html_a96d28dd842024a3df7dfbf6e9010661d"><div class="ttname"><a href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d">Finger::postprocess_meshes</a></div><div class="ttdeci">void postprocess_meshes(void)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00172">finger.cpp:172</a></div></div>
-<div class="ttc" id="aclassFinger_html_a9f2c84e14721446e17299115d7c02ebb"><div class="ttname"><a href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">Finger::m_meshes_filenames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_meshes_filenames</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00062">finger.h:62</a></div></div>
-<div class="ttc" id="aclassFinger_html_aaa5dfee5d7ae0443a910237f9ec84079"><div class="ttname"><a href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079">Finger::parse_json_file</a></div><div class="ttdeci">void parse_json_file(const nlohmann::json &amp;json_file)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00203">finger.cpp:203</a></div></div>
-<div class="ttc" id="aclassFinger_html_ab62f1efe0416ad749c6c6f26a1c8949d"><div class="ttname"><a href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">Finger::m_origin</a></div><div class="ttdeci">dm::JointState m_origin</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00044">finger.h:44</a></div></div>
-<div class="ttc" id="aclassFinger_html_abcb6f77bbc5234f68cb72f05cb6f4544"><div class="ttname"><a href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544">Finger::update</a></div><div class="ttdeci">void update(const std::vector&lt; dm::JointState &gt; &amp;state)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00039">finger.cpp:39</a></div></div>
-<div class="ttc" id="aclassFinger_html_ac3fd6d2f0bf68bcb36b562932b87b65b"><div class="ttname"><a href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b">Finger::get_mesh_data</a></div><div class="ttdeci">void get_mesh_data(igl::opengl::glfw::Viewer *viewer)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00159">finger.cpp:159</a></div></div>
-<div class="ttc" id="aclassFinger_html_ad18b921f83545f57dfa5936251fbd664"><div class="ttname"><a href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">Finger::m_name_id</a></div><div class="ttdeci">std::string m_name_id</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00041">finger.h:41</a></div></div>
-<div class="ttc" id="aclassFinger_html_ad927b17728889a0c6b82ebac8d863960"><div class="ttname"><a href="classFinger.html#ad927b17728889a0c6b82ebac8d863960">Finger::initialize_mesh_containers</a></div><div class="ttdeci">void initialize_mesh_containers(void)</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00130">finger.cpp:130</a></div></div>
+<div class="line"><span class="lineno">   20</span>    <span class="comment">// Parse the json file</span></div>
+<div class="line"><span class="lineno">   21</span>    <a class="code hl_function" href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079">parse_json_file</a>(json_file);</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>    <span class="comment">// Initialize mesh files</span></div>
+<div class="line"><span class="lineno">   24</span>    <a class="code hl_function" href="classFinger.html#ad927b17728889a0c6b82ebac8d863960">initialize_mesh_containers</a>();</div>
+<div class="line"><span class="lineno">   25</span> </div>
+<div class="line"><span class="lineno">   26</span>    <span class="comment">// Load mesh files</span></div>
+<div class="line"><span class="lineno">   27</span>    <a class="code hl_function" href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184">load_mesh_files</a>(viewer);</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>    <span class="comment">// Set viewer data indices</span></div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a> = mesh_idx;</div>
+<div class="line"><span class="lineno">   31</span>    <a class="code hl_variable" href="classFinger.html#af365139746d6a37072d715274a84d5f6">m_viewer_data_upper_idx</a> = <a class="code hl_variable" href="classFinger.html#a0b70dd35ea884ef082aff06d630a1340">m_viewer_data_lower_idx</a> +</div>
+<div class="line"><span class="lineno">   32</span>        (<a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.size() - 1);</div>
+<div class="line"><span class="lineno">   33</span>    </div>
+<div class="line"><span class="lineno">   34</span>    <span class="comment">// Get mesh data</span></div>
+<div class="line"><span class="lineno">   35</span>    <a class="code hl_function" href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b">get_mesh_data</a>(viewer);</div>
+<div class="line"><span class="lineno">   36</span>    </div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// Postprocess meshes</span></div>
+<div class="line"><span class="lineno">   38</span>    <a class="code hl_function" href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d">postprocess_meshes</a>();</div>
+<div class="line"><span class="lineno">   39</span>    </div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Initialize state</span></div>
+<div class="line"><span class="lineno">   41</span>    <a class="code hl_function" href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e">initialize_state</a>(<a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>, <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>);</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="comment">// Initialize meshes</span></div>
+<div class="line"><span class="lineno">   44</span>    <a class="code hl_function" href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544">update</a>(<a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>);</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclassFinger_html_a02b4f8fbc30b217c5f7b17520c81426e"><div class="ttname"><a href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e">Finger::initialize_state</a></div><div class="ttdeci">void initialize_state(const std::vector&lt; double &gt; &amp;link_lengths, const dm::JointState &amp;origin)</div><div class="ttdoc">Initialize state.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00130">finger.cpp:130</a></div></div>
+<div class="ttc" id="aclassFinger_html_a3cadbce43a8889abb0c092e14785ed08"><div class="ttname"><a href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">Finger::m_link_lengths</a></div><div class="ttdeci">std::vector&lt; double &gt; m_link_lengths</div><div class="ttdoc">The lengths of the finger links.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00053">finger.h:53</a></div></div>
+<div class="ttc" id="aclassFinger_html_a4da29fccb583c940c6d3697da5a1f184"><div class="ttname"><a href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184">Finger::load_mesh_files</a></div><div class="ttdeci">void load_mesh_files(igl::opengl::glfw::Viewer *viewer)</div><div class="ttdoc">Load finger mesh files.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00184">finger.cpp:184</a></div></div>
+<div class="ttc" id="aclassFinger_html_a96d28dd842024a3df7dfbf6e9010661d"><div class="ttname"><a href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d">Finger::postprocess_meshes</a></div><div class="ttdeci">void postprocess_meshes(void)</div><div class="ttdoc">Postproccess meshes.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00213">finger.cpp:213</a></div></div>
+<div class="ttc" id="aclassFinger_html_a9f2c84e14721446e17299115d7c02ebb"><div class="ttname"><a href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">Finger::m_meshes_filenames</a></div><div class="ttdeci">std::vector&lt; std::string &gt; m_meshes_filenames</div><div class="ttdoc">Mesh files for joints and bones(links).</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00070">finger.h:70</a></div></div>
+<div class="ttc" id="aclassFinger_html_aaa5dfee5d7ae0443a910237f9ec84079"><div class="ttname"><a href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079">Finger::parse_json_file</a></div><div class="ttdeci">void parse_json_file(const nlohmann::json &amp;json_file)</div><div class="ttdoc">Parses the finger configuration json file.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00248">finger.cpp:248</a></div></div>
+<div class="ttc" id="aclassFinger_html_ab62f1efe0416ad749c6c6f26a1c8949d"><div class="ttname"><a href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">Finger::m_origin</a></div><div class="ttdeci">dm::JointState m_origin</div><div class="ttdoc">Finger origin.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00050">finger.h:50</a></div></div>
+<div class="ttc" id="aclassFinger_html_abcb6f77bbc5234f68cb72f05cb6f4544"><div class="ttname"><a href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544">Finger::update</a></div><div class="ttdeci">void update(const std::vector&lt; dm::JointState &gt; &amp;state)</div><div class="ttdoc">Update state.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00060">finger.cpp:60</a></div></div>
+<div class="ttc" id="aclassFinger_html_ac3fd6d2f0bf68bcb36b562932b87b65b"><div class="ttname"><a href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b">Finger::get_mesh_data</a></div><div class="ttdeci">void get_mesh_data(igl::opengl::glfw::Viewer *viewer)</div><div class="ttdoc">Get mesh data.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00197">finger.cpp:197</a></div></div>
+<div class="ttc" id="aclassFinger_html_ad18b921f83545f57dfa5936251fbd664"><div class="ttname"><a href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">Finger::m_name_id</a></div><div class="ttdeci">std::string m_name_id</div><div class="ttdoc">Finger name id.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00047">finger.h:47</a></div></div>
+<div class="ttc" id="aclassFinger_html_ad927b17728889a0c6b82ebac8d863960"><div class="ttname"><a href="classFinger.html#ad927b17728889a0c6b82ebac8d863960">Finger::initialize_mesh_containers</a></div><div class="ttdeci">void initialize_mesh_containers(void)</div><div class="ttdoc">Initialize mesh files.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8cpp_source.html#l00160">finger.cpp:160</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_a04be694106c7b4bb8ebe599f0cad3c8e_cgraph.png" border="0" usemap="#aclassFinger_a04be694106c7b4bb8ebe599f0cad3c8e_cgraph" alt=""/></div>
 <map name="aclassFinger_a04be694106c7b4bb8ebe599f0cad3c8e_cgraph" id="aclassFinger_a04be694106c7b4bb8ebe599f0cad3c8e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,188,131,215"/>
-<area shape="rect" href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b" title=" " alt="" coords="181,5,351,32"/>
-<area shape="rect" href="classFinger.html#ad927b17728889a0c6b82ebac8d863960" title=" " alt="" coords="196,57,336,98"/>
-<area shape="rect" href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e" title=" " alt="" coords="203,122,329,163"/>
-<area shape="rect" href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184" title=" " alt="" coords="179,188,353,215"/>
-<area shape="rect" href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079" title=" " alt="" coords="183,239,349,265"/>
-<area shape="rect" href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d" title=" " alt="" coords="193,290,339,331"/>
-<area shape="rect" href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544" title=" " alt="" coords="209,356,323,383"/>
-<area shape="rect" href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b" title=" " alt="" coords="401,356,577,383"/>
-<area shape="rect" href="classEulerRotations.html#a9820b5640bb42c5caa771d04ee2f523f" title=" " alt="" coords="625,283,784,325"/>
-<area shape="rect" href="classEulerRotations.html#a6d58dc1b46a675abcd7d2a314f03758b" title=" " alt="" coords="625,349,784,390"/>
-<area shape="rect" href="classEulerRotations.html#ac2a2309c6e4132a487d973d93456629c" title=" " alt="" coords="625,414,784,455"/>
+<area shape="rect" title="Initialize finger." alt="" coords="5,188,131,215"/>
+<area shape="rect" href="classFinger.html#ac3fd6d2f0bf68bcb36b562932b87b65b" title="Get mesh data." alt="" coords="181,5,351,32"/>
+<area shape="rect" href="classFinger.html#ad927b17728889a0c6b82ebac8d863960" title="Initialize mesh files." alt="" coords="196,57,336,98"/>
+<area shape="rect" href="classFinger.html#a02b4f8fbc30b217c5f7b17520c81426e" title="Initialize state." alt="" coords="203,122,329,163"/>
+<area shape="rect" href="classFinger.html#a4da29fccb583c940c6d3697da5a1f184" title="Load finger mesh files." alt="" coords="179,188,353,215"/>
+<area shape="rect" href="classFinger.html#aaa5dfee5d7ae0443a910237f9ec84079" title="Parses the finger configuration json file." alt="" coords="183,239,349,265"/>
+<area shape="rect" href="classFinger.html#a96d28dd842024a3df7dfbf6e9010661d" title="Postproccess meshes." alt="" coords="193,290,339,331"/>
+<area shape="rect" href="classFinger.html#abcb6f77bbc5234f68cb72f05cb6f4544" title="Update state." alt="" coords="209,356,323,383"/>
+<area shape="rect" href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b" title="Euler rotation matrix z&#45;y&#39;&#45;x&#39;&#39;." alt="" coords="401,356,577,383"/>
+<area shape="rect" href="classEulerRotations.html#a9820b5640bb42c5caa771d04ee2f523f" title="Basic rotation matrix wrt x axis." alt="" coords="625,283,784,325"/>
+<area shape="rect" href="classEulerRotations.html#a6d58dc1b46a675abcd7d2a314f03758b" title="Basic rotation matrix wrt y axis." alt="" coords="625,349,784,390"/>
+<area shape="rect" href="classEulerRotations.html#ac2a2309c6e4132a487d973d93456629c" title="Basic rotation matrix wrt z axis." alt="" coords="625,414,784,455"/>
 </map>
 </div>
 
@@ -453,35 +514,38 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00130">130</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  131</span>{</div>
-<div class="line"><span class="lineno">  132</span>    <span class="comment">// Get mesh files absolute filenames</span></div>
-<div class="line"><span class="lineno">  133</span>    <span class="keyword">auto</span> joint_mesh_abs = std::filesystem::current_path() / <a class="code hl_variable" href="classFinger.html#a113457c9043e7c365e07b721d08d524a">m_joint_rel_filename</a>;</div>
-<div class="line"><span class="lineno">  134</span>    <span class="keyword">auto</span> bone_mesh_abs = std::filesystem::current_path() / <a class="code hl_variable" href="classFinger.html#a831b540bc056f0f2e9c18343a0074553">m_bone_rel_filename</a>;</div>
-<div class="line"><span class="lineno">  135</span> </div>
-<div class="line"><span class="lineno">  136</span>   <span class="comment">// Generate meshses filenames</span></div>
-<div class="line"><span class="lineno">  137</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>.size(); i++)</div>
-<div class="line"><span class="lineno">  138</span>    {</div>
-<div class="line"><span class="lineno">  139</span>       <span class="comment">// Meshes filenames configuration</span></div>
-<div class="line"><span class="lineno">  140</span>       <a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.push_back(joint_mesh_abs.string());</div>
-<div class="line"><span class="lineno">  141</span>       <a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.push_back(bone_mesh_abs.string());</div>
-<div class="line"><span class="lineno">  142</span> </div>
-<div class="line"><span class="lineno">  143</span>       <span class="comment">// Geometry scales configurations</span></div>
-<div class="line"><span class="lineno">  144</span>       <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.push_back(<a class="code hl_variable" href="classFinger.html#a2fb1e29c1ad22283b57f8793f4e8860d">m_joint_scale</a>);</div>
-<div class="line"><span class="lineno">  145</span>       <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.push_back(<a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>.at(i));</div>
-<div class="line"><span class="lineno">  146</span>    }</div>
-<div class="line"><span class="lineno">  147</span>}</div>
-<div class="ttc" id="aclassFinger_html_a113457c9043e7c365e07b721d08d524a"><div class="ttname"><a href="classFinger.html#a113457c9043e7c365e07b721d08d524a">Finger::m_joint_rel_filename</a></div><div class="ttdeci">std::string m_joint_rel_filename</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00058">finger.h:58</a></div></div>
-<div class="ttc" id="aclassFinger_html_a2fb1e29c1ad22283b57f8793f4e8860d"><div class="ttname"><a href="classFinger.html#a2fb1e29c1ad22283b57f8793f4e8860d">Finger::m_joint_scale</a></div><div class="ttdeci">double m_joint_scale</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00068">finger.h:68</a></div></div>
-<div class="ttc" id="aclassFinger_html_a831b540bc056f0f2e9c18343a0074553"><div class="ttname"><a href="classFinger.html#a831b540bc056f0f2e9c18343a0074553">Finger::m_bone_rel_filename</a></div><div class="ttdeci">std::string m_bone_rel_filename</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00059">finger.h:59</a></div></div>
-<div class="ttc" id="aclassFinger_html_add202bd396404d3dc71f855f0293811a"><div class="ttname"><a href="classFinger.html#add202bd396404d3dc71f855f0293811a">Finger::m_geom_scales</a></div><div class="ttdeci">std::vector&lt; double &gt; m_geom_scales</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00071">finger.h:71</a></div></div>
+<p>Initialize mesh files. </p>
+<p >It initializes the mesh containers for its link and joint based on their properties defined in the configuration file <a class="el" href="classHand.html#a36017946352efe19758d7fb1e4bc14ae">Hand::m_config_rel_path</a>. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00160">160</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  161</span>{</div>
+<div class="line"><span class="lineno">  162</span>    <span class="comment">// Get mesh files absolute filenames</span></div>
+<div class="line"><span class="lineno">  163</span>    <span class="keyword">auto</span> joint_mesh_abs = std::filesystem::current_path() / <a class="code hl_variable" href="classFinger.html#a113457c9043e7c365e07b721d08d524a">m_joint_rel_filename</a>;</div>
+<div class="line"><span class="lineno">  164</span>    <span class="keyword">auto</span> bone_mesh_abs = std::filesystem::current_path() / <a class="code hl_variable" href="classFinger.html#a831b540bc056f0f2e9c18343a0074553">m_bone_rel_filename</a>;</div>
+<div class="line"><span class="lineno">  165</span> </div>
+<div class="line"><span class="lineno">  166</span>   <span class="comment">// Generate meshses filenames</span></div>
+<div class="line"><span class="lineno">  167</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  168</span>    {</div>
+<div class="line"><span class="lineno">  169</span>       <span class="comment">// Meshes filenames configuration</span></div>
+<div class="line"><span class="lineno">  170</span>       <a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.push_back(joint_mesh_abs.string());</div>
+<div class="line"><span class="lineno">  171</span>       <a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.push_back(bone_mesh_abs.string());</div>
+<div class="line"><span class="lineno">  172</span> </div>
+<div class="line"><span class="lineno">  173</span>       <span class="comment">// Geometry scales configurations</span></div>
+<div class="line"><span class="lineno">  174</span>       <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.push_back(<a class="code hl_variable" href="classFinger.html#a2fb1e29c1ad22283b57f8793f4e8860d">m_joint_scale</a>);</div>
+<div class="line"><span class="lineno">  175</span>       <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.push_back(<a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>.at(i));</div>
+<div class="line"><span class="lineno">  176</span>    }</div>
+<div class="line"><span class="lineno">  177</span>}</div>
+<div class="ttc" id="aclassFinger_html_a113457c9043e7c365e07b721d08d524a"><div class="ttname"><a href="classFinger.html#a113457c9043e7c365e07b721d08d524a">Finger::m_joint_rel_filename</a></div><div class="ttdeci">std::string m_joint_rel_filename</div><div class="ttdoc">Joint mesh file.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00064">finger.h:64</a></div></div>
+<div class="ttc" id="aclassFinger_html_a2fb1e29c1ad22283b57f8793f4e8860d"><div class="ttname"><a href="classFinger.html#a2fb1e29c1ad22283b57f8793f4e8860d">Finger::m_joint_scale</a></div><div class="ttdeci">double m_joint_scale</div><div class="ttdoc">Joint scales.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00076">finger.h:76</a></div></div>
+<div class="ttc" id="aclassFinger_html_a831b540bc056f0f2e9c18343a0074553"><div class="ttname"><a href="classFinger.html#a831b540bc056f0f2e9c18343a0074553">Finger::m_bone_rel_filename</a></div><div class="ttdeci">std::string m_bone_rel_filename</div><div class="ttdoc">Bone (link) mesh file.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00067">finger.h:67</a></div></div>
+<div class="ttc" id="aclassFinger_html_add202bd396404d3dc71f855f0293811a"><div class="ttname"><a href="classFinger.html#add202bd396404d3dc71f855f0293811a">Finger::m_geom_scales</a></div><div class="ttdeci">std::vector&lt; double &gt; m_geom_scales</div><div class="ttdoc">Finger scales.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00079">finger.h:79</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_ad927b17728889a0c6b82ebac8d863960_icgraph.png" border="0" usemap="#aclassFinger_ad927b17728889a0c6b82ebac8d863960_icgraph" alt=""/></div>
 <map name="aclassFinger_ad927b17728889a0c6b82ebac8d863960_icgraph" id="aclassFinger_ad927b17728889a0c6b82ebac8d863960_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,319,47"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,13,131,39"/>
+<area shape="rect" title="Initialize mesh files." alt="" coords="179,5,319,47"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,13,131,39"/>
 </map>
 </div>
 
@@ -521,37 +585,47 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00104">104</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  106</span>{</div>
-<div class="line"><span class="lineno">  107</span>    <span class="comment">// State size </span></div>
-<div class="line"><span class="lineno">  108</span>    <a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a> = link_lengths.size();</div>
-<div class="line"><span class="lineno">  109</span> </div>
-<div class="line"><span class="lineno">  110</span>    <span class="comment">// Initialize state vector</span></div>
-<div class="line"><span class="lineno">  111</span>    <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.resize(<a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    <span class="comment">// Set origin</span></div>
-<div class="line"><span class="lineno">  114</span>    <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(0) = origin;</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <span class="comment">// Generate initial state vector states  </span></div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">int</span> idx = 0;</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>; i++)</div>
-<div class="line"><span class="lineno">  120</span>    {</div>
-<div class="line"><span class="lineno">  121</span>        <span class="comment">// Set link lengths</span></div>
-<div class="line"><span class="lineno">  122</span>        <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(i).position(0) = link_lengths.at(idx);</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>        <span class="comment">// Update idx</span></div>
-<div class="line"><span class="lineno">  125</span>        idx++;</div>
-<div class="line"><span class="lineno">  126</span>    }</div>
-<div class="line"><span class="lineno">  127</span>}</div>
-<div class="ttc" id="aclassFinger_html_aad258daba0dbf462136b269e5c4b657d"><div class="ttname"><a href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">Finger::m_state_size</a></div><div class="ttdeci">int m_state_size</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00106">finger.h:106</a></div></div>
+<p>Initialize state. </p>
+<p >It initializes the state of the finger based on the link_lengths and their origins as defined from the configuration file (<a class="el" href="classHand.html#a36017946352efe19758d7fb1e4bc14ae">Hand::m_config_rel_path</a>)</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">link_lengths</td><td>The lengths of the links. </td></tr>
+    <tr><td class="paramname">origin</td><td>The origins of the links. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00130">130</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  132</span>{</div>
+<div class="line"><span class="lineno">  133</span>    <span class="comment">// State size </span></div>
+<div class="line"><span class="lineno">  134</span>    <a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a> = link_lengths.size();</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="comment">// Initialize state vector</span></div>
+<div class="line"><span class="lineno">  137</span>    <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.resize(<a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
+<div class="line"><span class="lineno">  138</span> </div>
+<div class="line"><span class="lineno">  139</span>    <span class="comment">// Set origin</span></div>
+<div class="line"><span class="lineno">  140</span>    <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(0) = origin;</div>
+<div class="line"><span class="lineno">  141</span> </div>
+<div class="line"><span class="lineno">  142</span>    <span class="comment">// Generate initial state vector states  </span></div>
+<div class="line"><span class="lineno">  143</span>    <span class="keywordtype">int</span> idx = 0;</div>
+<div class="line"><span class="lineno">  144</span> </div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 1; i &lt; <a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>; i++)</div>
+<div class="line"><span class="lineno">  146</span>    {</div>
+<div class="line"><span class="lineno">  147</span>        <span class="comment">// Set link lengths</span></div>
+<div class="line"><span class="lineno">  148</span>        <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(i).position(0) = link_lengths.at(idx);</div>
+<div class="line"><span class="lineno">  149</span> </div>
+<div class="line"><span class="lineno">  150</span>        <span class="comment">// Update idx</span></div>
+<div class="line"><span class="lineno">  151</span>        idx++;</div>
+<div class="line"><span class="lineno">  152</span>    }</div>
+<div class="line"><span class="lineno">  153</span>}</div>
+<div class="ttc" id="aclassFinger_html_aad258daba0dbf462136b269e5c4b657d"><div class="ttname"><a href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">Finger::m_state_size</a></div><div class="ttdeci">int m_state_size</div><div class="ttdoc">State size.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00118">finger.h:118</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_a02b4f8fbc30b217c5f7b17520c81426e_icgraph.png" border="0" usemap="#aclassFinger_a02b4f8fbc30b217c5f7b17520c81426e_icgraph" alt=""/></div>
 <map name="aclassFinger_a02b4f8fbc30b217c5f7b17520c81426e_icgraph" id="aclassFinger_a02b4f8fbc30b217c5f7b17520c81426e_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,304,47"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,13,131,39"/>
+<area shape="rect" title="Initialize state." alt="" coords="179,5,304,47"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,13,131,39"/>
 </map>
 </div>
 
@@ -573,20 +647,29 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00150">150</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
-<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.size(); i++)</div>
-<div class="line"><span class="lineno">  153</span>    {</div>
-<div class="line"><span class="lineno">  154</span>        viewer-&gt;load_mesh_from_file(<a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.at(i));</div>
-<div class="line"><span class="lineno">  155</span>    }</div>
-<div class="line"><span class="lineno">  156</span>}</div>
+<p>Load finger mesh files. </p>
+<p >Simply loads the meshes to the viewer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">viewer</td><td>Pointer to the viewer object. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00184">184</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  185</span>{</div>
+<div class="line"><span class="lineno">  186</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  187</span>    {</div>
+<div class="line"><span class="lineno">  188</span>        viewer-&gt;load_mesh_from_file(<a class="code hl_variable" href="classFinger.html#a9f2c84e14721446e17299115d7c02ebb">m_meshes_filenames</a>.at(i));</div>
+<div class="line"><span class="lineno">  189</span>    }</div>
+<div class="line"><span class="lineno">  190</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_a4da29fccb583c940c6d3697da5a1f184_icgraph.png" border="0" usemap="#aclassFinger_a4da29fccb583c940c6d3697da5a1f184_icgraph" alt=""/></div>
 <map name="aclassFinger_a4da29fccb583c940c6d3697da5a1f184_icgraph" id="aclassFinger_a4da29fccb583c940c6d3697da5a1f184_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,353,32"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" title="Load finger mesh files." alt="" coords="179,5,353,32"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,5,131,32"/>
 </map>
 </div>
 
@@ -616,50 +699,59 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00203">203</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  204</span>{</div>
-<div class="line"><span class="lineno">  205</span>    <span class="comment">// Get lengths</span></div>
-<div class="line"><span class="lineno">  206</span>    <span class="keyword">auto</span> lengths_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Lengths&quot;</span>];</div>
-<div class="line"><span class="lineno">  207</span> </div>
-<div class="line"><span class="lineno">  208</span>    <span class="comment">// Get frame ids</span></div>
-<div class="line"><span class="lineno">  209</span>    <span class="keyword">auto</span> frames_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Frames&quot;</span>];</div>
-<div class="line"><span class="lineno">  210</span> </div>
-<div class="line"><span class="lineno">  211</span>    <span class="comment">// Get origin position</span></div>
-<div class="line"><span class="lineno">  212</span>    <span class="keyword">auto</span> origin_position_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Origin&quot;</span>][<span class="stringliteral">&quot;Position&quot;</span>];</div>
-<div class="line"><span class="lineno">  213</span>    </div>
-<div class="line"><span class="lineno">  214</span>    <span class="comment">// Get origin orientation</span></div>
-<div class="line"><span class="lineno">  215</span>    <span class="keyword">auto</span> origin_euler_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Origin&quot;</span>][<span class="stringliteral">&quot;Euler&quot;</span>];</div>
-<div class="line"><span class="lineno">  216</span>    </div>
-<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; lengths_json.size(); i++)</div>
-<div class="line"><span class="lineno">  218</span>    {</div>
-<div class="line"><span class="lineno">  219</span>        <span class="comment">// Push back link lengths</span></div>
-<div class="line"><span class="lineno">  220</span>        <a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>.push_back(lengths_json.at(i));</div>
-<div class="line"><span class="lineno">  221</span> </div>
-<div class="line"><span class="lineno">  222</span>        <span class="comment">// Set origin position</span></div>
-<div class="line"><span class="lineno">  223</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">position</a>(0) = origin_position_json.at(0);</div>
-<div class="line"><span class="lineno">  224</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">position</a>(1) = origin_position_json.at(1);</div>
-<div class="line"><span class="lineno">  225</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">position</a>(2) = origin_position_json.at(2);</div>
-<div class="line"><span class="lineno">  226</span> </div>
-<div class="line"><span class="lineno">  227</span>        <span class="comment">// Set origin orientation</span></div>
-<div class="line"><span class="lineno">  228</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">euler</a>(0) = origin_euler_json.at(0);</div>
-<div class="line"><span class="lineno">  229</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">euler</a>(1) = origin_euler_json.at(1);</div>
-<div class="line"><span class="lineno">  230</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">euler</a>(2) = origin_euler_json.at(2);</div>
-<div class="line"><span class="lineno">  231</span>    }</div>
-<div class="line"><span class="lineno">  232</span> </div>
-<div class="line"><span class="lineno">  233</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; frames_json.size(); i++)</div>
-<div class="line"><span class="lineno">  234</span>    {</div>
-<div class="line"><span class="lineno">  235</span>        <a class="code hl_variable" href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">m_frame_ids</a>.push_back(frames_json.at(i));</div>
-<div class="line"><span class="lineno">  236</span>    }</div>
-<div class="line"><span class="lineno">  237</span>}</div>
-<div class="ttc" id="astructdm_1_1JointState_html_a546614aaa446fa21dff021a65cae0d60"><div class="ttname"><a href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">dm::JointState::position</a></div><div class="ttdeci">Eigen::Vector3d position</div><div class="ttdef"><b>Definition:</b> <a href="dynamics__math_8h_source.html#l00011">dynamics_math.h:11</a></div></div>
-<div class="ttc" id="astructdm_1_1JointState_html_acaa344f6dc90f41869e1d5568a2f6d6a"><div class="ttname"><a href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">dm::JointState::euler</a></div><div class="ttdeci">Eigen::Vector3d euler</div><div class="ttdef"><b>Definition:</b> <a href="dynamics__math_8h_source.html#l00014">dynamics_math.h:14</a></div></div>
+<p>Parses the finger configuration json file. </p>
+<p >Simply parses the finger configuration file.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json_file</td><td>The json file namek </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00248">248</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  249</span>{</div>
+<div class="line"><span class="lineno">  250</span>    <span class="comment">// Get lengths</span></div>
+<div class="line"><span class="lineno">  251</span>    <span class="keyword">auto</span> lengths_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Lengths&quot;</span>];</div>
+<div class="line"><span class="lineno">  252</span> </div>
+<div class="line"><span class="lineno">  253</span>    <span class="comment">// Get frame ids</span></div>
+<div class="line"><span class="lineno">  254</span>    <span class="keyword">auto</span> frames_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Frames&quot;</span>];</div>
+<div class="line"><span class="lineno">  255</span> </div>
+<div class="line"><span class="lineno">  256</span>    <span class="comment">// Get origin position</span></div>
+<div class="line"><span class="lineno">  257</span>    <span class="keyword">auto</span> origin_position_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Origin&quot;</span>][<span class="stringliteral">&quot;Position&quot;</span>];</div>
+<div class="line"><span class="lineno">  258</span>    </div>
+<div class="line"><span class="lineno">  259</span>    <span class="comment">// Get origin orientation</span></div>
+<div class="line"><span class="lineno">  260</span>    <span class="keyword">auto</span> origin_euler_json = json_file[<a class="code hl_variable" href="classFinger.html#ad18b921f83545f57dfa5936251fbd664">m_name_id</a>][<span class="stringliteral">&quot;Origin&quot;</span>][<span class="stringliteral">&quot;Euler&quot;</span>];</div>
+<div class="line"><span class="lineno">  261</span>    </div>
+<div class="line"><span class="lineno">  262</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; lengths_json.size(); i++)</div>
+<div class="line"><span class="lineno">  263</span>    {</div>
+<div class="line"><span class="lineno">  264</span>        <span class="comment">// Push back link lengths</span></div>
+<div class="line"><span class="lineno">  265</span>        <a class="code hl_variable" href="classFinger.html#a3cadbce43a8889abb0c092e14785ed08">m_link_lengths</a>.push_back(lengths_json.at(i));</div>
+<div class="line"><span class="lineno">  266</span> </div>
+<div class="line"><span class="lineno">  267</span>        <span class="comment">// Set origin position</span></div>
+<div class="line"><span class="lineno">  268</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">position</a>(0) = origin_position_json.at(0);</div>
+<div class="line"><span class="lineno">  269</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">position</a>(1) = origin_position_json.at(1);</div>
+<div class="line"><span class="lineno">  270</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">position</a>(2) = origin_position_json.at(2);</div>
+<div class="line"><span class="lineno">  271</span> </div>
+<div class="line"><span class="lineno">  272</span>        <span class="comment">// Set origin orientation</span></div>
+<div class="line"><span class="lineno">  273</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">euler</a>(0) = origin_euler_json.at(0);</div>
+<div class="line"><span class="lineno">  274</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">euler</a>(1) = origin_euler_json.at(1);</div>
+<div class="line"><span class="lineno">  275</span>        <a class="code hl_variable" href="classFinger.html#ab62f1efe0416ad749c6c6f26a1c8949d">m_origin</a>.<a class="code hl_variable" href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">euler</a>(2) = origin_euler_json.at(2);</div>
+<div class="line"><span class="lineno">  276</span>    }</div>
+<div class="line"><span class="lineno">  277</span> </div>
+<div class="line"><span class="lineno">  278</span>    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; frames_json.size(); i++)</div>
+<div class="line"><span class="lineno">  279</span>    {</div>
+<div class="line"><span class="lineno">  280</span>        <a class="code hl_variable" href="classFinger.html#a0ea40e480d4c479827ef97533b3fc26d">m_frame_ids</a>.push_back(frames_json.at(i));</div>
+<div class="line"><span class="lineno">  281</span>    }</div>
+<div class="line"><span class="lineno">  282</span>}</div>
+<div class="ttc" id="astructdm_1_1JointState_html_a546614aaa446fa21dff021a65cae0d60"><div class="ttname"><a href="structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60">dm::JointState::position</a></div><div class="ttdeci">Eigen::Vector3d position</div><div class="ttdef"><b>Definition:</b> <a href="dynamics__math_8h_source.html#l00021">dynamics_math.h:21</a></div></div>
+<div class="ttc" id="astructdm_1_1JointState_html_acaa344f6dc90f41869e1d5568a2f6d6a"><div class="ttname"><a href="structdm_1_1JointState.html#acaa344f6dc90f41869e1d5568a2f6d6a">dm::JointState::euler</a></div><div class="ttdeci">Eigen::Vector3d euler</div><div class="ttdef"><b>Definition:</b> <a href="dynamics__math_8h_source.html#l00024">dynamics_math.h:24</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_aaa5dfee5d7ae0443a910237f9ec84079_icgraph.png" border="0" usemap="#aclassFinger_aaa5dfee5d7ae0443a910237f9ec84079_icgraph" alt=""/></div>
 <map name="aclassFinger_aaa5dfee5d7ae0443a910237f9ec84079_icgraph" id="aclassFinger_aaa5dfee5d7ae0443a910237f9ec84079_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,345,32"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" title="Parses the finger configuration json file." alt="" coords="179,5,345,32"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,5,131,32"/>
 </map>
 </div>
 
@@ -689,43 +781,46 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00172">172</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  173</span>{</div>
-<div class="line"><span class="lineno">  174</span>    <span class="comment">// Scale meshes</span></div>
-<div class="line"><span class="lineno">  175</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.size(); i++)</div>
-<div class="line"><span class="lineno">  176</span>    {</div>
-<div class="line"><span class="lineno">  177</span><span class="comment">        /************** Scale data *******************/</span></div>
-<div class="line"><span class="lineno">  178</span>        Eigen::Matrix3d scale_matrix;</div>
-<div class="line"><span class="lineno">  179</span>        scale_matrix &lt;&lt; <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.at(i), 0.0, 0.0,</div>
-<div class="line"><span class="lineno">  180</span>            0.0, <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.at(i), 0.0, 0.0, 0.0, <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.at(i);</div>
-<div class="line"><span class="lineno">  181</span> </div>
-<div class="line"><span class="lineno">  182</span>        <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.at(i) = (scale_matrix *</div>
-<div class="line"><span class="lineno">  183</span>            <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.at(i).transpose()).transpose();</div>
-<div class="line"><span class="lineno">  184</span> </div>
-<div class="line"><span class="lineno">  185</span><span class="comment">        /************** Generate homogeneous vertices data *******************/</span></div>
-<div class="line"><span class="lineno">  186</span>        <span class="comment">// Get mesh i</span></div>
-<div class="line"><span class="lineno">  187</span>        Eigen::MatrixXd mesh_i = <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.at(i);</div>
-<div class="line"><span class="lineno">  188</span> </div>
-<div class="line"><span class="lineno">  189</span>        <span class="comment">// Initialize homogeneous coordinates</span></div>
-<div class="line"><span class="lineno">  190</span>        Eigen::MatrixXd mesh_i_oh = Eigen::MatrixXd::Ones(mesh_i.rows(),</div>
-<div class="line"><span class="lineno">  191</span>            mesh_i.cols() + 1);</div>
-<div class="line"><span class="lineno">  192</span> </div>
-<div class="line"><span class="lineno">  193</span>        <span class="comment">// Generate matrix of homogeneous coordinates</span></div>
-<div class="line"><span class="lineno">  194</span>        mesh_i_oh.col(0) = mesh_i.col(0);</div>
-<div class="line"><span class="lineno">  195</span>        mesh_i_oh.col(1) = mesh_i.col(1);</div>
-<div class="line"><span class="lineno">  196</span>        mesh_i_oh.col(2) = mesh_i.col(2);</div>
-<div class="line"><span class="lineno">  197</span> </div>
-<div class="line"><span class="lineno">  198</span>        <a class="code hl_variable" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a>.push_back(mesh_i_oh);</div>
-<div class="line"><span class="lineno">  199</span>    }</div>
-<div class="line"><span class="lineno">  200</span>}</div>
-<div class="ttc" id="aclassFinger_html_ae44d33fd2df3e4968cd36a02a1288989"><div class="ttname"><a href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">Finger::m_vertices_data_oh</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXd &gt; m_vertices_data_oh</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00085">finger.h:85</a></div></div>
+<p>Postproccess meshes. </p>
+<p >It sets the scale of the meshes based on the links length and the joints desired size. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00213">213</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  214</span>{</div>
+<div class="line"><span class="lineno">  215</span>    <span class="comment">// Scale meshes</span></div>
+<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  217</span>    {</div>
+<div class="line"><span class="lineno">  218</span><span class="comment">        /************** Scale data *******************/</span></div>
+<div class="line"><span class="lineno">  219</span>        Eigen::Matrix3d scale_matrix;</div>
+<div class="line"><span class="lineno">  220</span>        scale_matrix &lt;&lt; <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.at(i), 0.0, 0.0,</div>
+<div class="line"><span class="lineno">  221</span>            0.0, <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.at(i), 0.0, 0.0, 0.0, <a class="code hl_variable" href="classFinger.html#add202bd396404d3dc71f855f0293811a">m_geom_scales</a>.at(i);</div>
+<div class="line"><span class="lineno">  222</span> </div>
+<div class="line"><span class="lineno">  223</span>        <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.at(i) = (scale_matrix *</div>
+<div class="line"><span class="lineno">  224</span>            <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.at(i).transpose()).transpose();</div>
+<div class="line"><span class="lineno">  225</span> </div>
+<div class="line"><span class="lineno">  226</span><span class="comment">        /************** Generate homogeneous vertices data *******************/</span></div>
+<div class="line"><span class="lineno">  227</span>        <span class="comment">// Get mesh i</span></div>
+<div class="line"><span class="lineno">  228</span>        Eigen::MatrixXd mesh_i = <a class="code hl_variable" href="classFinger.html#a21e8ba4afda72979241581b1b0f54374">m_vertices_data_o</a>.at(i);</div>
+<div class="line"><span class="lineno">  229</span> </div>
+<div class="line"><span class="lineno">  230</span>        <span class="comment">// Initialize homogeneous coordinates</span></div>
+<div class="line"><span class="lineno">  231</span>        Eigen::MatrixXd mesh_i_oh = Eigen::MatrixXd::Ones(mesh_i.rows(),</div>
+<div class="line"><span class="lineno">  232</span>            mesh_i.cols() + 1);</div>
+<div class="line"><span class="lineno">  233</span> </div>
+<div class="line"><span class="lineno">  234</span>        <span class="comment">// Generate matrix of homogeneous coordinates</span></div>
+<div class="line"><span class="lineno">  235</span>        mesh_i_oh.col(0) = mesh_i.col(0);</div>
+<div class="line"><span class="lineno">  236</span>        mesh_i_oh.col(1) = mesh_i.col(1);</div>
+<div class="line"><span class="lineno">  237</span>        mesh_i_oh.col(2) = mesh_i.col(2);</div>
+<div class="line"><span class="lineno">  238</span> </div>
+<div class="line"><span class="lineno">  239</span>        <a class="code hl_variable" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a>.push_back(mesh_i_oh);</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+<div class="line"><span class="lineno">  241</span>}</div>
+<div class="ttc" id="aclassFinger_html_ae44d33fd2df3e4968cd36a02a1288989"><div class="ttname"><a href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">Finger::m_vertices_data_oh</a></div><div class="ttdeci">std::vector&lt; Eigen::MatrixXd &gt; m_vertices_data_oh</div><div class="ttdoc">Vertices data (original homogeneous).</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00097">finger.h:97</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_a96d28dd842024a3df7dfbf6e9010661d_icgraph.png" border="0" usemap="#aclassFinger_a96d28dd842024a3df7dfbf6e9010661d_icgraph" alt=""/></div>
 <map name="aclassFinger_a96d28dd842024a3df7dfbf6e9010661d_icgraph" id="aclassFinger_a96d28dd842024a3df7dfbf6e9010661d_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,325,47"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,13,131,39"/>
+<area shape="rect" title="Postproccess meshes." alt="" coords="179,5,325,47"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,13,131,39"/>
 </map>
 </div>
 
@@ -747,81 +842,90 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00039">39</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   41</span>{</div>
-<div class="line"><span class="lineno">   42</span>    <span class="comment">// Update state vector</span></div>
-<div class="line"><span class="lineno">   43</span>    <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a> =  state;</div>
-<div class="line"><span class="lineno">   44</span> </div>
-<div class="line"><span class="lineno">   45</span>    <span class="comment">// Resize states</span></div>
-<div class="line"><span class="lineno">   46</span>    <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.resize(<a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.resize(<a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    <span class="comment">/* Loop through state vector components and</span></div>
-<div class="line"><span class="lineno">   50</span><span class="comment">    generate transformation matrices */</span></div>
-<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.size(); i++)</div>
-<div class="line"><span class="lineno">   52</span>    {</div>
-<div class="line"><span class="lineno">   53</span><span class="comment">        /*********** Local transformation ***********/</span></div>
-<div class="line"><span class="lineno">   54</span>        <span class="comment">// Initialize transformation matrices</span></div>
-<div class="line"><span class="lineno">   55</span>        Eigen::Matrix4d local_transform = Eigen::Matrix4d::Identity();</div>
-<div class="line"><span class="lineno">   56</span> </div>
-<div class="line"><span class="lineno">   57</span>        <span class="comment">// Position vector</span></div>
-<div class="line"><span class="lineno">   58</span>        local_transform.block&lt;3, 1&gt;(0, 3) = <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(i).position;</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>        <span class="comment">// Rotation matrix</span></div>
-<div class="line"><span class="lineno">   61</span>        local_transform.block&lt;3, 3&gt;(0, 0) =</div>
-<div class="line"><span class="lineno">   62</span>            <a class="code hl_function" href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b">EulerRotations::rotation</a>(<a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(i).euler);</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>        <span class="comment">// Push back locak transform</span></div>
-<div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.at(i) = local_transform;</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span><span class="comment">        /*********** Global transformation ***********/</span></div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordflow">if</span> (i == 0) {</div>
-<div class="line"><span class="lineno">   69</span>            <span class="comment">// Global transform</span></div>
-<div class="line"><span class="lineno">   70</span>            <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i) = <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.at(i);</div>
-<div class="line"><span class="lineno">   71</span>        }</div>
-<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   73</span>            <span class="comment">// Global transform</span></div>
-<div class="line"><span class="lineno">   74</span>            <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i) = <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i-1) * </div>
-<div class="line"><span class="lineno">   75</span>                    <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.at(i);</div>
-<div class="line"><span class="lineno">   76</span>        }</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span> </div>
-<div class="line"><span class="lineno">   79</span>    <span class="comment">// Resize vertices data</span></div>
-<div class="line"><span class="lineno">   80</span>    <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>.resize(2 * <a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    <span class="comment">// Loop through global transformation matrices</span></div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.size(); i++)</div>
-<div class="line"><span class="lineno">   84</span>    {</div>
-<div class="line"><span class="lineno">   85</span>        <span class="comment">// Get global transformation matrix</span></div>
-<div class="line"><span class="lineno">   86</span>        Eigen::Matrix4d t_mat = <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i);</div>
-<div class="line"><span class="lineno">   87</span> </div>
-<div class="line"><span class="lineno">   88</span><span class="comment">        /****************** Transform vertices ********************/</span></div>
-<div class="line"><span class="lineno">   89</span>        <span class="comment">// Joint vertices</span></div>
-<div class="line"><span class="lineno">   90</span>        Eigen::MatrixXd joint_vert =</div>
-<div class="line"><span class="lineno">   91</span>            (t_mat * <a class="code hl_variable" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a>.at(2*i).transpose()).transpose();</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>        <span class="comment">// Link vertices</span></div>
-<div class="line"><span class="lineno">   94</span>        Eigen::MatrixXd link_vert =</div>
-<div class="line"><span class="lineno">   95</span>            (t_mat * <a class="code hl_variable" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a>.at(2*i+1).transpose()).transpose();</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>        <span class="comment">// Push back vertices</span></div>
-<div class="line"><span class="lineno">   98</span>        <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>.at(2*i) = joint_vert.leftCols&lt;3&gt;();</div>
-<div class="line"><span class="lineno">   99</span>        <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>.at(2*i+1) = link_vert.leftCols&lt;3&gt;();</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
-<div class="line"><span class="lineno">  101</span>}</div>
-<div class="ttc" id="aclassEulerRotations_html_a59359356cd2301630d6d58f642acd07b"><div class="ttname"><a href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b">EulerRotations::rotation</a></div><div class="ttdeci">static Eigen::Matrix3d rotation(double phi, double theta, double psi)</div><div class="ttdef"><b>Definition:</b> <a href="euler__rotations_8cpp_source.html#l00044">euler_rotations.cpp:44</a></div></div>
-<div class="ttc" id="aclassFinger_html_a61ace8ab4c3bc54a477abd8422f35e67"><div class="ttname"><a href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">Finger::m_global_transform</a></div><div class="ttdeci">std::vector&lt; Eigen::Matrix4d &gt; m_global_transform</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00112">finger.h:112</a></div></div>
-<div class="ttc" id="aclassFinger_html_ace33a56119755934d98e839a69d193fc"><div class="ttname"><a href="classFinger.html#ace33a56119755934d98e839a69d193fc">Finger::m_local_transform</a></div><div class="ttdeci">std::vector&lt; Eigen::Matrix4d &gt; m_local_transform</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00109">finger.h:109</a></div></div>
+<p>Update state. </p>
+<p >This function updates the finger's state (position and orientation of its links and joints). It performs the forward kinematics for each link of the finger. It first calculates the local transform of each links with respect to each previous link. Then it calculates the global transforms (with respect to the hand's base frame <img class="formulaInl" alt="$ f_{{W}_{0}}$" src="form_10.png" width="20" height="14"/>) by performing and iterative compound transormation (post-miltiply rules, see Forward Kinematics Spong * Robot Modeling and Control). The frame conventions and the definitions of the rotation and translation matrices used are given in the handover document.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">state</td><td>The vector of joint euler angles and postions as defined in dm::JointStateu. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="finger_8cpp_source.html#l00060">60</a> of file <a class="el" href="finger_8cpp_source.html">finger.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   61</span>{</div>
+<div class="line"><span class="lineno">   62</span>    <span class="comment">// Update state vector</span></div>
+<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a> =  state;</div>
+<div class="line"><span class="lineno">   64</span> </div>
+<div class="line"><span class="lineno">   65</span>    <span class="comment">// Resize states</span></div>
+<div class="line"><span class="lineno">   66</span>    <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.resize(<a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
+<div class="line"><span class="lineno">   67</span>    <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.resize(<a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
+<div class="line"><span class="lineno">   68</span> </div>
+<div class="line"><span class="lineno">   69</span>    <span class="comment">/* Loop through state vector components and</span></div>
+<div class="line"><span class="lineno">   70</span><span class="comment">    generate transformation matrices */</span></div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.size(); i++)</div>
+<div class="line"><span class="lineno">   72</span>    {</div>
+<div class="line"><span class="lineno">   73</span><span class="comment">        /*********** Local transformation ***********/</span></div>
+<div class="line"><span class="lineno">   74</span>        <span class="comment">// Initialize transformation matrices</span></div>
+<div class="line"><span class="lineno">   75</span>        Eigen::Matrix4d local_transform = Eigen::Matrix4d::Identity();</div>
+<div class="line"><span class="lineno">   76</span> </div>
+<div class="line"><span class="lineno">   77</span>        <span class="comment">// Position vector</span></div>
+<div class="line"><span class="lineno">   78</span>        local_transform.block&lt;3, 1&gt;(0, 3) = <a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(i).position;</div>
+<div class="line"><span class="lineno">   79</span> </div>
+<div class="line"><span class="lineno">   80</span>        <span class="comment">// Rotation matrix</span></div>
+<div class="line"><span class="lineno">   81</span>        local_transform.block&lt;3, 3&gt;(0, 0) =</div>
+<div class="line"><span class="lineno">   82</span>            <a class="code hl_function" href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b">EulerRotations::rotation</a>(<a class="code hl_variable" href="classFinger.html#ab4508a2f115615efe39be06acb57e78f">m_state_vec</a>.at(i).euler);</div>
+<div class="line"><span class="lineno">   83</span> </div>
+<div class="line"><span class="lineno">   84</span>        <span class="comment">// Push back locak transform</span></div>
+<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.at(i) = local_transform;</div>
+<div class="line"><span class="lineno">   86</span> </div>
+<div class="line"><span class="lineno">   87</span><span class="comment">        /*********** Global transformation ***********/</span></div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">if</span> (i == 0) {</div>
+<div class="line"><span class="lineno">   89</span>            <span class="comment">// Global transform</span></div>
+<div class="line"><span class="lineno">   90</span>            <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i) = <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.at(i);</div>
+<div class="line"><span class="lineno">   91</span>        }</div>
+<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   93</span>            <span class="comment">// Global transform</span></div>
+<div class="line"><span class="lineno">   94</span>            <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i) = <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i-1) * </div>
+<div class="line"><span class="lineno">   95</span>                    <a class="code hl_variable" href="classFinger.html#ace33a56119755934d98e839a69d193fc">m_local_transform</a>.at(i);</div>
+<div class="line"><span class="lineno">   96</span>        }</div>
+<div class="line"><span class="lineno">   97</span>    }</div>
+<div class="line"><span class="lineno">   98</span> </div>
+<div class="line"><span class="lineno">   99</span>    <span class="comment">// Resize vertices data</span></div>
+<div class="line"><span class="lineno">  100</span>    <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>.resize(2 * <a class="code hl_variable" href="classFinger.html#aad258daba0dbf462136b269e5c4b657d">m_state_size</a>);</div>
+<div class="line"><span class="lineno">  101</span> </div>
+<div class="line"><span class="lineno">  102</span>    <span class="comment">// Loop through global transformation matrices</span></div>
+<div class="line"><span class="lineno">  103</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.size(); i++)</div>
+<div class="line"><span class="lineno">  104</span>    {</div>
+<div class="line"><span class="lineno">  105</span>        <span class="comment">// Get global transformation matrix</span></div>
+<div class="line"><span class="lineno">  106</span>        Eigen::Matrix4d t_mat = <a class="code hl_variable" href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">m_global_transform</a>.at(i);</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span><span class="comment">        /****************** Transform vertices ********************/</span></div>
+<div class="line"><span class="lineno">  109</span>        <span class="comment">// Joint vertices</span></div>
+<div class="line"><span class="lineno">  110</span>        Eigen::MatrixXd joint_vert =</div>
+<div class="line"><span class="lineno">  111</span>            (t_mat * <a class="code hl_variable" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a>.at(2*i).transpose()).transpose();</div>
+<div class="line"><span class="lineno">  112</span> </div>
+<div class="line"><span class="lineno">  113</span>        <span class="comment">// Link vertices</span></div>
+<div class="line"><span class="lineno">  114</span>        Eigen::MatrixXd link_vert =</div>
+<div class="line"><span class="lineno">  115</span>            (t_mat * <a class="code hl_variable" href="classFinger.html#ae44d33fd2df3e4968cd36a02a1288989">m_vertices_data_oh</a>.at(2*i+1).transpose()).transpose();</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>        <span class="comment">// Push back vertices</span></div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>.at(2*i) = joint_vert.leftCols&lt;3&gt;();</div>
+<div class="line"><span class="lineno">  119</span>        <a class="code hl_variable" href="classFinger.html#a34a55aaeece25e46b9a22f0f461eaed8">m_vertices_data</a>.at(2*i+1) = link_vert.leftCols&lt;3&gt;();</div>
+<div class="line"><span class="lineno">  120</span>    }</div>
+<div class="line"><span class="lineno">  121</span>}</div>
+<div class="ttc" id="aclassEulerRotations_html_a59359356cd2301630d6d58f642acd07b"><div class="ttname"><a href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b">EulerRotations::rotation</a></div><div class="ttdeci">static Eigen::Matrix3d rotation(double phi, double theta, double psi)</div><div class="ttdoc">Euler rotation matrix z-y'-x''.</div><div class="ttdef"><b>Definition:</b> <a href="euler__rotations_8cpp_source.html#l00066">euler_rotations.cpp:66</a></div></div>
+<div class="ttc" id="aclassFinger_html_a61ace8ab4c3bc54a477abd8422f35e67"><div class="ttname"><a href="classFinger.html#a61ace8ab4c3bc54a477abd8422f35e67">Finger::m_global_transform</a></div><div class="ttdeci">std::vector&lt; Eigen::Matrix4d &gt; m_global_transform</div><div class="ttdoc">Global transforamation matrix.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00124">finger.h:124</a></div></div>
+<div class="ttc" id="aclassFinger_html_ace33a56119755934d98e839a69d193fc"><div class="ttname"><a href="classFinger.html#ace33a56119755934d98e839a69d193fc">Finger::m_local_transform</a></div><div class="ttdeci">std::vector&lt; Eigen::Matrix4d &gt; m_local_transform</div><div class="ttdoc">Local transforamation matrix.</div><div class="ttdef"><b>Definition:</b> <a href="finger_8h_source.html#l00121">finger.h:121</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_abcb6f77bbc5234f68cb72f05cb6f4544_cgraph.png" border="0" usemap="#aclassFinger_abcb6f77bbc5234f68cb72f05cb6f4544_cgraph" alt=""/></div>
 <map name="aclassFinger_abcb6f77bbc5234f68cb72f05cb6f4544_cgraph" id="aclassFinger_abcb6f77bbc5234f68cb72f05cb6f4544_cgraph">
-<area shape="rect" title=" " alt="" coords="5,78,120,105"/>
-<area shape="rect" href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b" title=" " alt="" coords="168,78,344,105"/>
-<area shape="rect" href="classEulerRotations.html#a9820b5640bb42c5caa771d04ee2f523f" title=" " alt="" coords="392,5,551,47"/>
-<area shape="rect" href="classEulerRotations.html#a6d58dc1b46a675abcd7d2a314f03758b" title=" " alt="" coords="392,71,551,112"/>
-<area shape="rect" href="classEulerRotations.html#ac2a2309c6e4132a487d973d93456629c" title=" " alt="" coords="392,136,551,177"/>
+<area shape="rect" title="Update state." alt="" coords="5,78,120,105"/>
+<area shape="rect" href="classEulerRotations.html#a59359356cd2301630d6d58f642acd07b" title="Euler rotation matrix z&#45;y&#39;&#45;x&#39;&#39;." alt="" coords="168,78,344,105"/>
+<area shape="rect" href="classEulerRotations.html#a9820b5640bb42c5caa771d04ee2f523f" title="Basic rotation matrix wrt x axis." alt="" coords="392,5,551,47"/>
+<area shape="rect" href="classEulerRotations.html#a6d58dc1b46a675abcd7d2a314f03758b" title="Basic rotation matrix wrt y axis." alt="" coords="392,71,551,112"/>
+<area shape="rect" href="classEulerRotations.html#ac2a2309c6e4132a487d973d93456629c" title="Basic rotation matrix wrt z axis." alt="" coords="392,136,551,177"/>
 </map>
 </div>
 <div class="dynheader">
@@ -829,8 +933,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classFinger_abcb6f77bbc5234f68cb72f05cb6f4544_icgraph.png" border="0" usemap="#aclassFinger_abcb6f77bbc5234f68cb72f05cb6f4544_icgraph" alt=""/></div>
 <map name="aclassFinger_abcb6f77bbc5234f68cb72f05cb6f4544_icgraph" id="aclassFinger_abcb6f77bbc5234f68cb72f05cb6f4544_icgraph">
-<area shape="rect" title=" " alt="" coords="179,5,293,32"/>
-<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title=" " alt="" coords="5,5,131,32"/>
+<area shape="rect" title="Update state." alt="" coords="179,5,293,32"/>
+<area shape="rect" href="classFinger.html#a04be694106c7b4bb8ebe599f0cad3c8e" title="Initialize finger." alt="" coords="5,5,131,32"/>
 </map>
 </div>
 
@@ -857,7 +961,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00059">59</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Bone (link) mesh file. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00067">67</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -881,7 +987,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00091">91</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Faces data. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00103">103</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -905,7 +1013,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00050">50</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>The frame ids of the finger. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00056">56</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -929,7 +1039,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00071">71</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> scales. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00079">79</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1065,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00112">112</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Global transforamation matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00124">124</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -977,7 +1091,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00058">58</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Joint mesh file. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00064">64</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1001,7 +1117,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00068">68</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Joint scales. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00076">76</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1025,7 +1143,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00047">47</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>The lengths of the finger links. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00053">53</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1049,7 +1169,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00109">109</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Local transforamation matrix. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00121">121</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1073,7 +1195,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00062">62</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Mesh files for joints and bones(links). </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00070">70</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1097,7 +1221,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00041">41</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> name id. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00047">47</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1121,7 +1247,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00044">44</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> origin. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00050">50</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1145,7 +1273,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00106">106</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>State size. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00118">118</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1169,7 +1299,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00103">103</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p><a class="el" href="classFinger.html" title="This class generates a finger of n links. The number of links and their properties are defined by a j...">Finger</a> state. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00115">115</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1193,7 +1325,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00088">88</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Vertices data. </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00100">100</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1217,7 +1351,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00082">82</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Vertices data (original). </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00094">94</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1241,7 +1377,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00085">85</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Vertices data (original homogeneous). </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00097">97</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1265,7 +1403,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00074">74</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Viewer data lower idx see (<a class="el" href="classHand.html#a508c4c71b757d369ba371c0a55f7d6fd">Hand::m_viewer_data_lower_idx</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00082">82</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
@@ -1289,7 +1429,9 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00074">74</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
+<p>Viewer data upper idx (see <a class="el" href="classHand.html#a508c4c71b757d369ba371c0a55f7d6fd">Hand::m_viewer_data_lower_idx</a>). </p>
+
+<p class="definition">Definition at line <a class="el" href="finger_8h_source.html#l00085">85</a> of file <a class="el" href="finger_8h_source.html">finger.h</a>.</p>
 
 </div>
 </div>
