@@ -1,8 +1,5 @@
 var searchData=
 [
-  ['phi_0',['phi',['../structEulerRotations_1_1Euler.html#a73ac076fa5b23cd84218f90079a529fc',1,'EulerRotations::Euler']]],
-  ['ports_1',['ports',['../namespaceports__read.html#aa5030796fe8c02095d7b9dfcaf027219',1,'ports_read']]],
-  ['ports_5ffile_2',['ports_file',['../namespaceports__read.html#a4010593d8d584e9ad1e9deb885e1fb61',1,'ports_read']]],
-  ['position_3',['position',['../structdm_1_1JointState.html#a546614aaa446fa21dff021a65cae0d60',1,'dm::JointState']]],
-  ['psi_4',['psi',['../structEulerRotations_1_1Euler.html#a85022b8cb78d619c2477eb1a599b5ab4',1,'EulerRotations::Euler']]]
+  ['rot_5fdir_0',['rot_dir',['../structAnimatedHand_1_1HandMap.html#a60c38facec781d1febb4e86d5db5f4f8',1,'AnimatedHand::HandMap']]],
+  ['rot_5ftype_1',['rot_type',['../structAnimatedHand_1_1HandMap.html#a113b54508ac52298d995bb48010267bb',1,'AnimatedHand::HandMap']]]
 ];

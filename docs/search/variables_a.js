@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['x_0',['x',['../structEulerRotations_1_1Quaternions.html#a7e57131854f817f53604ca28068b9c84',1,'EulerRotations::Quaternions']]]
+  ['y_0',['y',['../structEulerRotations_1_1Quaternions.html#af1fe9540c3adf6ebb54a25c5ff855662',1,'EulerRotations::Quaternions']]]
 ];
