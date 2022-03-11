@@ -112,15 +112,16 @@ $(function() {
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keyword">auto</span> lamda_anim_fun =</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>      [&amp;ka](igl::opengl::glfw::Viewer&amp; viewer) { <span class="keywordflow">return</span> ka.<a class="code hl_function" href="classKinematicAnimation.html#aeecbf92a1bb99909d8c262274cc5f123">animation_loop</a>(viewer); };</div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  </div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="comment">// Set animation</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  viewer.data().show_overlay_depth = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  viewer.data().line_width = 1;</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  viewer.data().show_lines = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  viewer.callback_pre_draw = lamda_anim_fun;</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  viewer.core().is_animating = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  viewer.core().animation_max_fps = 30;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  viewer.launch();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="comment">// Set animation</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  viewer.data().show_overlay_depth = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  viewer.data().line_width = 1;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  viewer.data().show_lines = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  viewer.callback_pre_draw = lamda_anim_fun;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  viewer.core().is_animating = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  viewer.core().animation_max_fps = 30;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  viewer.launch();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aanimated__hand_8h_html"><div class="ttname"><a href="animated__hand_8h.html">animated_hand.h</a></div></div>
 <div class="ttc" id="aclassAnimatedHand_html"><div class="ttname"><a href="classAnimatedHand.html">AnimatedHand</a></div><div class="ttdef"><b>Definition:</b> <a href="animated__hand_8h_source.html#l00009">animated_hand.h:10</a></div></div>
 <div class="ttc" id="aclassExoskeleton_html"><div class="ttname"><a href="classExoskeleton.html">Exoskeleton</a></div><div class="ttdoc">Class Exoskeleton.</div><div class="ttdef"><b>Definition:</b> <a href="exoskeleton_8h_source.html#l00019">exoskeleton.h:20</a></div></div>

@@ -51,6 +51,7 @@ int main(void)
   auto lamda_anim_fun =
       [&ka](igl::opengl::glfw::Viewer& viewer) { return ka.animation_loop(viewer); };
   
+
   // Set animation
   viewer.data().show_overlay_depth = false;
   viewer.data().line_width = 1;

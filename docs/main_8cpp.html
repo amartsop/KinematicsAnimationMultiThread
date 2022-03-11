@@ -180,15 +180,16 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   51</span>  <span class="keyword">auto</span> lamda_anim_fun =</div>
 <div class="line"><span class="lineno">   52</span>      [&amp;ka](igl::opengl::glfw::Viewer&amp; viewer) { <span class="keywordflow">return</span> ka.<a class="code hl_function" href="classKinematicAnimation.html#aeecbf92a1bb99909d8c262274cc5f123">animation_loop</a>(viewer); };</div>
 <div class="line"><span class="lineno">   53</span>  </div>
-<div class="line"><span class="lineno">   54</span>  <span class="comment">// Set animation</span></div>
-<div class="line"><span class="lineno">   55</span>  viewer.data().show_overlay_depth = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   56</span>  viewer.data().line_width = 1;</div>
-<div class="line"><span class="lineno">   57</span>  viewer.data().show_lines = <span class="keyword">false</span>;</div>
-<div class="line"><span class="lineno">   58</span>  viewer.callback_pre_draw = lamda_anim_fun;</div>
-<div class="line"><span class="lineno">   59</span>  viewer.core().is_animating = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   60</span>  viewer.core().animation_max_fps = 30;</div>
-<div class="line"><span class="lineno">   61</span>  viewer.launch();</div>
-<div class="line"><span class="lineno">   62</span>}</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>  <span class="comment">// Set animation</span></div>
+<div class="line"><span class="lineno">   56</span>  viewer.data().show_overlay_depth = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   57</span>  viewer.data().line_width = 1;</div>
+<div class="line"><span class="lineno">   58</span>  viewer.data().show_lines = <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   59</span>  viewer.callback_pre_draw = lamda_anim_fun;</div>
+<div class="line"><span class="lineno">   60</span>  viewer.core().is_animating = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   61</span>  viewer.core().animation_max_fps = 30;</div>
+<div class="line"><span class="lineno">   62</span>  viewer.launch();</div>
+<div class="line"><span class="lineno">   63</span>}</div>
 <div class="ttc" id="aclassAnimatedHand_html"><div class="ttname"><a href="classAnimatedHand.html">AnimatedHand</a></div><div class="ttdef"><b>Definition:</b> <a href="animated__hand_8h_source.html#l00009">animated_hand.h:10</a></div></div>
 <div class="ttc" id="aclassExoskeleton_html"><div class="ttname"><a href="classExoskeleton.html">Exoskeleton</a></div><div class="ttdoc">Class Exoskeleton.</div><div class="ttdef"><b>Definition:</b> <a href="exoskeleton_8h_source.html#l00019">exoskeleton.h:20</a></div></div>
 <div class="ttc" id="aclassKinematicAnimation_html"><div class="ttname"><a href="classKinematicAnimation.html">KinematicAnimation</a></div><div class="ttdoc">Class KinematicAnimation.</div><div class="ttdef"><b>Definition:</b> <a href="kinematic__animation_8h_source.html#l00015">kinematic_animation.h:16</a></div></div>
