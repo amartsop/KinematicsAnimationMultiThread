@@ -843,7 +843,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 
 <p>Update state. </p>
-<p >This function updates the finger's state (position and orientation of its links and joints). It performs the forward kinematics for each link of the finger. It first calculates the local transform of each links with respect to each previous link. Then it calculates the global transforms (with respect to the hand's base frame <img class="formulaInl" alt="$ f_{{W}_{0}}$" src="form_10.png" width="20" height="14"/>) by performing and iterative compound transormation (post-miltiply rules, see Forward Kinematics Spong * Robot Modeling and Control). The frame conventions and the definitions of the rotation and translation matrices used are given in the handover document.</p>
+<p >This function updates the finger's state (position and orientation of its links and joints). It performs the forward kinematics for each link of the finger. It first calculates the local transform of each links with respect to each previous link. Then it calculates the global transforms (with respect to the hand's base frame <img class="formulaInl" alt="$ f_{{W}_{0}}$" src="form_6.png" width="20" height="14"/>) by performing and iterative compound transormation (post-miltiply rules, see Forward Kinematics Spong * Robot Modeling and Control). The frame conventions and the definitions of the rotation and translation matrices used are given in the handover document.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">state</td><td>The vector of joint euler angles and postions as defined in dm::JointStateu. </td></tr>

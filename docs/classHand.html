@@ -114,7 +114,7 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:af2d78f1b0c804c5a8b96f5765cab3053"><td class="memItemLeft" align="right" valign="top">Eigen::Matrix3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHand.html#af2d78f1b0c804c5a8b96f5765cab3053">m_hand_rot</a></td></tr>
 <tr class="separator:af2d78f1b0c804c5a8b96f5765cab3053"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab881d2a4232aa8f1b35a659814a7e01f"><td class="memItemLeft" align="right" valign="top">Eigen::Vector3d&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHand.html#ab881d2a4232aa8f1b35a659814a7e01f">m_hand_origin</a></td></tr>
-<tr class="memdesc:ab881d2a4232aa8f1b35a659814a7e01f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHand.html" title="Class Hand.">Hand</a> origin with respect to the inertial frame of reference <img class="formulaInl" alt="$ F $" src="form_7.png" width="10" height="9"/>.  <a href="classHand.html#ab881d2a4232aa8f1b35a659814a7e01f">More...</a><br /></td></tr>
+<tr class="memdesc:ab881d2a4232aa8f1b35a659814a7e01f"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classHand.html" title="Class Hand.">Hand</a> origin with respect to the inertial frame of reference <img class="formulaInl" alt="$ F $" src="form_4.png" width="10" height="9"/>.  <a href="classHand.html#ab881d2a4232aa8f1b35a659814a7e01f">More...</a><br /></td></tr>
 <tr class="separator:ab881d2a4232aa8f1b35a659814a7e01f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af63b51d0d224db8fd672afd38e313270"><td class="memItemLeft" align="right" valign="top">std::vector&lt; Eigen::MatrixXd &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHand.html#af63b51d0d224db8fd672afd38e313270">m_vertex_data</a></td></tr>
 <tr class="memdesc:af63b51d0d224db8fd672afd38e313270"><td class="mdescLeft">&#160;</td><td class="mdescRight">Vertex data container.  <a href="classHand.html#af63b51d0d224db8fd672afd38e313270">More...</a><br /></td></tr>
@@ -279,7 +279,7 @@ template&lt;typename T &gt; </div>
     <tr><td class="paramname">exo_handler</td><td>Point to the exoskeleton object. </td></tr>
     <tr><td class="paramname">anim_hand</td><td>Pointer to the hand animation object. </td></tr>
     <tr><td class="paramname">type</td><td>Defines whether the hand is the left one (0) or the right one (1). </td></tr>
-    <tr><td class="paramname">origin</td><td>Defines the origin of the hand <img class="formulaInl" alt="$ f_{{W}_{0}} $" src="form_9.png" width="20" height="14"/> with respct to the inertial frame <img class="formulaInl" alt="$ F $" src="form_7.png" width="10" height="9"/>. </td></tr>
+    <tr><td class="paramname">origin</td><td>Defines the origin of the hand <img class="formulaInl" alt="$ f_{{W}_{0}} $" src="form_7.png" width="20" height="14"/> with respct to the inertial frame <img class="formulaInl" alt="$ F $" src="form_4.png" width="10" height="9"/>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -611,7 +611,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Relative name of hand's configuration file. This is a json file that contains the geometric characteristics of each finger (link lengths of the finger, ordered as [proximal, middle, distal]), the position and orientation of the finger's frame with respect to the local hand frame <img class="formulaInl" alt="$ T_{f_{O_{i}}}^{f_{W_{0}}} $" src="form_6.png" width="28" height="23"/> with <img class="formulaInl" alt="$ i = 0, 3, 6 $" src="form_5.png" width="51" height="11"/> and the finger's frame names as illustrated in the figure below. </p><div class="image">
+<p >Relative name of hand's configuration file. This is a json file that contains the geometric characteristics of each finger (link lengths of the finger, ordered as [proximal, middle, distal]), the position and orientation of the finger's frame with respect to the local hand frame <img class="formulaInl" alt="$ T_{f_{O_{i}}}^{f_{W_{0}}} $" src="form_1.png" width="28" height="23"/> with <img class="formulaInl" alt="$ i = 0, 3, 6 $" src="form_2.png" width="51" height="11"/> and the finger's frame names as illustrated in the figure below. </p><div class="image">
 <img src="animated_hand_kinematic_model.png" alt="" width="600px"/>
 </div>
  
@@ -716,7 +716,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p><a class="el" href="classHand.html" title="Class Hand.">Hand</a> origin with respect to the inertial frame of reference <img class="formulaInl" alt="$ F $" src="form_7.png" width="10" height="9"/>. </p>
+<p><a class="el" href="classHand.html" title="Class Hand.">Hand</a> origin with respect to the inertial frame of reference <img class="formulaInl" alt="$ F $" src="form_4.png" width="10" height="9"/>. </p>
 
 <p class="definition">Definition at line <a class="el" href="hand_8h_source.html#l00063">63</a> of file <a class="el" href="hand_8h_source.html">hand.h</a>.</p>
 
@@ -741,7 +741,7 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >The total rotation matrix of the hand <img class="formulaInl" alt="$ T_{f_{W_{0}}}^{F} $" src="form_8.png" width="25" height="19"/>, with respect to the inertial frame of reference <img class="formulaInl" alt="$ F $" src="form_7.png" width="10" height="9"/>. </p>
+<p >The total rotation matrix of the hand <img class="formulaInl" alt="$ T_{f_{W_{0}}}^{F} $" src="form_3.png" width="25" height="19"/>, with respect to the inertial frame of reference <img class="formulaInl" alt="$ F $" src="form_4.png" width="10" height="9"/>. </p>
 
 <p class="definition">Definition at line <a class="el" href="hand_8h_source.html#l00060">60</a> of file <a class="el" href="hand_8h_source.html">hand.h</a>.</p>
 
