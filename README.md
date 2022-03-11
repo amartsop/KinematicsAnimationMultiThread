@@ -8,8 +8,6 @@ on the [configuration file](./share/hand_config.json) that correspond to the spe
 [configuration file](./share/hand_config.json) based on their exoskeleton measurements.
 
 <img src="./images/animation2.svg" width="100%"/>
-<img src="./images/kinematic_animation_model.svg" width="50%"/>
-
 
 For more information on the software please see the reference document 
 [reference document](https://github.com/amartsop/ExoskeletonHandover/blob/master/main.pdf), while for the full documentation 
