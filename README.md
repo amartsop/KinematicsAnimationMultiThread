@@ -10,6 +10,5 @@ on the [configuration file](./share/hand_config.json) that correspond to the spe
 <img src="./images/animation2.svg" width="100%"/>
 
 For more information on the software please see the reference document 
-[reference document](https://github.com/amartsop/ExoskeletonHandover/blob/master/main.pdf), while for the full documentation 
-please visit the [API referece](https://amartsop.github.io/Exoskeleton/).
+[reference document](https://github.com/amartsop/ExoskeletonHandover/blob/master/main.pdf), while for the full documentation please visit the [API referece](https://amartsop.github.io/KinematicsAnimationMultiThread/).
 
